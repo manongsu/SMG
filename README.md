@@ -1,2 +1,0 @@
-# SMG
-SMGTest
