@@ -56,9 +56,15 @@ header .user li p{text-align: center;font-size: 12px;margin-bottom: 0;}
 .video li .play{width:48px;height: 48px;position: absolute;top:50%;left: 50%;margin-top: -24px;margin-left: -24px;}
 /*message*/
 .message{width: 100%;float: left;margin-top: 0.5rem;}
-.message .tab{width: 100%;height:14px;padding: 20px 0;}
-.tab li{display:inline-block;height: 100%;padding: 0 20px;border-right: 1px solid #ddd;}
-.tab li a{display: block;height: 16px;margin-top: -3px;}
+.message .tab{width: 100%;height:20px;padding: 17px 0;overflow: auto;}
+.message .tab ul{float:left;height: 20px;margin-right:-999em;/*word-break:keep-all;white-space:nowrap;*/}
+.tab li{float:left;height: 20px;position: relative;line-height: 20px;}
+.tab li a{display: block;height: 100%;padding: 0 20px;border-right: 1px solid #ddd;}
+.tab li i{position:absolute;top:8px;left:10px;height: 4px;width: 4px;border-radius: 2px;display: none;}
+.tab li.active a{color: #f93402;}
+.tab li.active i{display: block;}
+.tab li:hover a{color: #f93402;}
+.tab li:hover i{display: block;}
 .list_group{border-top: 1px solid #f0f0f0;}
 .list_group .media_list{padding: 0.375rem 0;border-bottom: 1px solid #f0f0f0;height: 3.75rem;position: relative;}
 .media_list a{display: block;width: 100%;height: 100%;overflow: hidden;}
