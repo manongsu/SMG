@@ -79,8 +79,8 @@
     <div class="main_left">
         <div class="videoBanner">
             <div class="videoWrap" style="width:100%;height: 11.25rem;position: relative;">
-                <video class="movie">
-                    <source src="movie.mp4" type="video/mp4">
+                <video src="movie.mp4" class="movie">
+
                     Your browser does not support the video tag.
                 </video>
                 <img class="play" src="images/play.png" alt="">
@@ -98,16 +98,16 @@
                     <a href="javascript:;" class="btnFullScreen"></a>
                     <!--声音-->
                     <a href="javascript:;" class="btnSound"></a>
-                    <a href="javascript:;" class="btnNoSound" style=""></a>
+                    <a href="javascript:;" class="btnNoSound" style="display:none;"></a>
                 </div>
             </div>
             <div class="videoBannerList">
                 <a href="" class="turnLeft"><img src="images/turnLeft.png" alt=""/></a>
                 <ul>
-                    <li class="borderR"><img src="images/message1.png" alt=""/><p>八旬老人发明光盘灯</p></li>
-                    <li class="borderR active"><img src="images/message2.png" alt=""/><p>美丽的地球</p></li>
-                    <li class="borderR"><img src="images/message3.png" alt=""/><p>牡丹花开放的季节</p></li>
-                    <li class="borderR"><img src="images/message4.png" alt=""/><p>实时新闻</p></li>
+                    <li class="borderR" videoUrl="movie.ogg"><img src="images/message1.png" alt=""/><p>八旬老人发明光盘灯</p></li>
+                    <li class="borderR active" videoUrl=""><img src="images/message2.png" alt=""/><p>美丽的地球</p></li>
+                    <li class="borderR" videoUrl=""><img src="images/message3.png" alt=""/><p>牡丹花开放的季节</p></li>
+                    <li class="borderR" videoUrl=""><img src="images/message4.png" alt=""/><p>实时新闻</p></li>
                 </ul>
                 <a href=""class="turnRight"><img src="images/turnRight.png" alt=""/></a>
             </div>
@@ -496,8 +496,6 @@
             $(".progressPlay").css("width",percent+"%");
         }
         /*声音*/
-
-
         /*全屏*/
         $('.btnFullScreen').on('click', function() {
             var de = $(".videoWrap")[0];
@@ -511,7 +509,14 @@
                 de.msRequestFullscreen();
             }
         });
+
     })
+</script>
+<!--切换video-->
+<script type="text/javascript">
+    $(".videoBannerList li").click(function () {
+       $(".movie").attr("src",$(this).attr("videoUrl"));
+    });
 </script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="js/rem.js"></script>
