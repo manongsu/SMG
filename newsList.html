@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/news.css"/>
     <link rel="stylesheet" href="css/media.css"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 <!--------------header---------------->
@@ -19,8 +22,8 @@
         <h1 class="logo"><a href=""><img src="images/logo.png" alt=""></a></h1>
         <nav class="menu hidden">
             <ul>
-                <li class="active"><a href="">首页</a></li>
-                <li><a href="">新闻</a></li>
+                <li><a href="">首页</a></li>
+                <li class="active"><a href="newsList.html">新闻</a></li>
                 <li><a href="">服务</a></li>
                 <li><a href="">购物</a></li>
                 <li><a href="">论坛</a></li>
@@ -57,8 +60,8 @@
         <div style="height: 14px;width: 1px;background-color: #fff;position: absolute;top:24px;left: 50%;"></div>
     </ul>
     <ul class="menu_link">
-        <li class="active"><a href="">首页</a></li>
-        <li><a href="">新闻</a></li>
+        <li><a href="">首页</a></li>
+        <li class="active"><a href="newsList.html">新闻</a></li>
         <li><a href="">服务</a></li>
         <li><a href="">购物</a></li>
         <li><a href="">论坛</a></li>
@@ -650,5 +653,8 @@
         }) ;
     });
 </script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/rem.js"></script>
+<![endif]-->
 </body>
 </html>

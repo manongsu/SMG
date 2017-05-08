@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="stylesheet" href="css/media.css"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/html5media.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 <!--------------header---------------->
@@ -20,7 +24,7 @@
         <nav class="menu hidden">
             <ul>
                 <li class="active"><a href="">首页</a></li>
-                <li><a href="">新闻</a></li>
+                <li><a href="newsList.html">新闻</a></li>
                 <li><a href="">服务</a></li>
                 <li><a href="">购物</a></li>
                 <li><a href="">论坛</a></li>
@@ -58,7 +62,7 @@
     </ul>
     <ul class="menu_link">
         <li class="active"><a href="">首页</a></li>
-        <li><a href="">新闻</a></li>
+        <li><a href="newsList.html">新闻</a></li>
         <li><a href="">服务</a></li>
         <li><a href="">购物</a></li>
         <li><a href="">论坛</a></li>
@@ -716,6 +720,7 @@
     </div>
 </div>
 <div id="mask" style="width: 100%;height: 100%;background-color: rgba(0,0,0,.5);position: absolute;top:0;left:0;display: none;z-index: 100;"></div>
+
 <script type="text/javascript" src="js/jquery.1.9.1.js"></script>
 <script type="text/javascript" src="js/banner.js"></script>
 <!--bannerJS-->
@@ -783,5 +788,8 @@
         }) ;
     });
 </script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/rem.js"></script>
+<![endif]-->
 </body>
 </html>
