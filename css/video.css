@@ -2,7 +2,7 @@
 .main_right{margin-top: -0.75rem;}
 /*-------------------------------left-------------------------------*/
 .videoBanner{height: 14.5rem;margin-top: 0.5rem;}
-.videoBanner video{width:100%;height: 11.25rem;background-color: #000;}
+.videoBanner video{width:100%;height: 10.5rem;background-color: #000;}
 .videoBanner .play{position: absolute;top:50%;left:50%;width:48px;height:48px;margin-top: -24px;margin-left: -24px;}
 .videoBanner .control{position: absolute;bottom:0;left:0;width:100%;height:30px;background-color: #248afe;}
 .videoBanner .control .btnPlay{float:left;display: block;width: 33px;height: 30px;background: url(../images/sprite.png) 0 0 no-repeat;}
@@ -65,7 +65,7 @@
 /*commentList*/
 .commentList{margin-top: 0.5rem;border-top: 2px solid #f93402;}
 .commentList h4{height:1.3rem;line-height:1.3rem;text-align: center;border-bottom: 1px solid #e5e5e5;font-size: 16px;}
-.commentList li{padding: 18px 0;border-bottom: 1px solid #e5e5e5;font-size: 0px;overflow: hidden;}
+.commentList li{padding: 18px 0;border-bottom: 1px solid #e5e5e5;font-size: 0;overflow: hidden;}
 .commentList li img{float:left;width:41px;height:41px;margin-right: 11px;}
 .commentList li p{float:left;width:288px;height: 17px;font-size: 14px;line-height: 17px;}
 .commentList li p span.name{font-size:16px;float: left;}
