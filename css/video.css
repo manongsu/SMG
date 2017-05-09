@@ -31,6 +31,7 @@
 .videoList h2 a{float: right;color: #666;font-size: 14px;font-weight: normal;}
 .videoList ul{overflow: hidden;border-bottom: 1px solid #f0f0f0;}
 .videoList li{width:6.333333rem;height:5rem;float:left;margin-bottom: 0.5rem;background-color: #f8f8f8;position: relative;}
+.videoList li.margin{margin: 0 0.5rem 0.5rem 0.5rem;}
 .videoList li a{display: block;font-size: 0;}
 .videoList li img{width:6.333333rem;height:3.65rem;}
 .videoList li h3{font-size: 14px;padding:0 0.375rem;line-height: 0.5rem;margin-top:0.175rem;font-weight:normal;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
