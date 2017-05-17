@@ -39,7 +39,7 @@
 .list_group .media_list{padding: 0.375rem 0;border-bottom: 1px solid #f0f0f0;height: 3.75rem;position: relative;}
 .media_list a{display: block;width: 100%;height: 100%;overflow: hidden;}
 .media_list a .media_left{float: left;height: 100%;width: 6rem;margin-right: 0.625rem;}
-.media_list a h3{float: left;width: 13.25rem;padding-right: 0.125rem;font-weight: normal;margin-bottom: 0.375rem;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;}
+.media_list a h3{float: left;width: 13.25rem;padding-right: 0.125rem;font-weight: normal;margin-bottom: 0.375rem;overflow: hidden;text-overflow: ellipsis; }
 .media_list a h3.active{color: #f93402;}
 .media_list a h3:hover{color: #f93402;}
 .media_list p.des{color: #999;height:14px;width: 13.25rem;float: left;}
