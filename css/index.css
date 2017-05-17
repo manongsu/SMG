@@ -100,8 +100,8 @@
 .links li .icon{background:url("../images/links.png") top left no-repeat;margin: 12px auto;}
 .links li p{text-align: center;position: absolute;left:0;bottom: 12px;margin-bottom: 0;width: 100%;font-size: 14px;color: #8a91a1;}
 /*groupBuy*/
-.groupBuy{background-color: #fafafa;padding-bottom: 15px;}
-.groupBuy h4{height: 1.35rem;line-height: 1.35rem;font-size: 16px;font-weight: normal;border-bottom: 1px solid #f93402;padding: 0 15px;}
+.groupBuy{padding-bottom: 15px;border-bottom: 1px solid #d8d8d8;}
+.groupBuy h4{height: 1.35rem;line-height: 1.35rem;font-size: 16px;font-weight: normal;border-bottom: 1px solid #d8d8d8;padding: 0 15px;}
 .groupBuy h4 img{float:left;margin:19px 5px 19px 0;}
 .groupBuy h4 p{float: right;}
 .groupBuy h4 p span{display: inline-block;width: 16px;height: 16px;line-height: 16px;background-color: #7d7d7d;color: #fff;font-size: 12px;text-align: center;}
