@@ -69,3 +69,6 @@ html,body{font-size: 40px;}
 .main_right{width: 8.5rem;}
 .features{overflow: hidden;}
 .features li{width:2.75rem;height: 2.375rem;margin: 0 0.125rem 0.125rem 0;}
+/*footer*/
+footer{width: 100%;height: 48px;background-color: #484242;text-align: center;padding: 30px 0;margin-top: 20px;}
+footer a,footer p{font-size: 14px;color: #c4bebe;line-height: 19px;}
