@@ -1,0 +1,14 @@
+header{background-color: #fff;}
+body{background-color: #efefef;}
+.banner{width:100%;height: 10rem;}
+
+.container{padding: 0 !important;}
+.goodsList ul{overflow: hidden;}
+.goodsList li{width: 9.25rem;height:7.75rem;float:left;margin-right: 0.75rem;margin-bottom: 0.75rem;background-color: #fff;}
+.goodsList li.right{margin-right: 0;}
+.goodsList li>a{font-size: 0;display: block;}
+.goodsList li>a>img{width:100%;height: 5.75rem;}
+.goodsList li .name{font-size: 18px;line-height:18px;padding:0 0.4rem;margin:0.35rem 0;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.goodsList li .des{font-size: 0;padding-left: 0.4rem;}
+.goodsList li .des img{float: left;margin-right: 7px;}
+.goodsList li .des span{font-size: 14px;line-height: 14px;color: #999;}

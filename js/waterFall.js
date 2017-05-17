@@ -14,14 +14,14 @@ $(function () {
                 case 2:
                     $this.css({
                         "top":height2,
-                        "left":"6.5rem",
+                        "left":"6.83rem",
                     });
                     height2 = height2 + $this.height()+mB;
                     break;
                 case 3:
                     $this.css({
                         "top":height3,
-                        "left":"13rem",
+                        "left":"13.66rem",
                     });
                     height3 = height3 + $this.height()+mB;
                     break;
