@@ -1,11 +1,22 @@
-/*-------------------------------list-------------------------------*/
-.grabVotesList{border-top:1px solid #e5e5e5;margin-top:0.375rem;}
-.grabVotesList li{height:1.625rem;line-height: 1.625rem;font-size:16px;border-bottom: 1px dashed #e5e5e5;}
-.grabVotesList li a{display: block;width: 100%;height: 100%}
-.grabVotesList li a>span{display: inline-block;width: 50%;height: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-.grabVotesList li p{float:right;color: #999;font-size: 0;height: 100%;}
-.grabVotesList li p img{margin-right: 5px;}
-.grabVotesList li p span{font-size: 14px;}
+.newsList{width: 100%;float: left;margin-top: 0.5rem;;}
+.newsList .tab{width: 100%;height:20px;padding: 17px 0;overflow: auto;border-bottom:1px solid #e5e5e5}
+.newsList .tab ul{float:left;height: 20px;margin-right:-999em;}
+.tab li{float:left;height: 20px;position: relative;line-height: 20px;}
+.tab li a{display: block;height: 100%;padding: 0 20px;border-right: 1px solid #ddd;font-size: 16px;}
+.tab li i{position:absolute;top:8px;left:10px;height: 4px;width: 4px;border-radius: 2px;display: none;}
+.tab li.active a{color: #f93402; }
+.tab li.active i{display: block;}
+.tab li:hover a{color: #f93402;}
+.tab li:hover i{display: block;}
+.publicityList{}
+.publicityList li{height:1.625rem;line-height: 1.625rem;font-size:16px;border-bottom: 1px dashed #e5e5e5;position: relative;}
+.publicityList li a{display: block;width: 100%;height: 16px;position: absolute;top:50%;margin-top: -8px;}
+.publicityList li a>i{float:left;width: 5px;height: 5px;border-radius:2.5px;background-color:#999;margin: 5px 0.25rem;}
+.publicityList li a>span{float:left;display: block;width: 50%;line-height:16px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.publicityList li a>span i{font-style: normal;}
+.publicityList li p{float:right;color: #999;font-size: 0;line-height:16px;}
+.publicityList li p img{float:left;margin:1px 5px;height:14px;}
+.publicityList li p span{font-size: 14px;}
 .loadMore{display: block;margin-top: 0.25rem;height: 1.125rem;background-color: #fafafa; font-size:14px;color:#999999;line-height: 1.125rem;text-align: center;}
 /*-------------------------------right-------------------------------*/
 /*slider*/
