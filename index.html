@@ -120,45 +120,46 @@
             </ul>
         </div>
     </div>
-    <div class="main_right">
-        <ul class="features" style="">
-            <li style="background: url('images/btn_bg1.png') no-repeat;">
-                <a href="">
-                    <img src="images/notes.png" alt=""/>
-                    <p>我的待办</p>
-                </a>
-            </li>
-            <li style="background: url('images/btn_bg2.png') no-repeat;">
-                <a href="">
-                    <img src="images/star.png" alt=""/>
-                    <p>我的OA</p>
-                </a>
-            </li>
-            <li style="background: url('images/btn_bg3.png') no-repeat;margin-right: 0;">
-                <a href="">
-                    <img src="images/pc.png" alt=""/>
-                    <p>员工自助</p>
-                </a>
-            </li>
-            <li style="background: url('images/btn_bg4.png') no-repeat;margin-bottom: 0;">
-                <a href="">
-                    <img src="images/email.png" alt=""/>
-                    <p>我的邮件</p>
-                </a>
-            </li>
-            <li style="background: url('images/btn_bg5.png') no-repeat;margin-bottom: 0;">
-                <a href="">
-                    <img src="images/tower.png" alt=""/>
-                    <p>服务区</p>
-                </a>
-            </li>
-            <li style="background: url('images/btn_bg6.png') no-repeat;margin-right: 0;margin-bottom:0;">
-                <a href="">
-                    <img src="images/files.png" alt=""/>
-                    <p>进入办公平台</p>
-                </a>
-            </li>
-        </ul>
+    <div class="main_right hidden">
+        <iframe style="width:100%;height: 50%;" src="features.html"></iframe>
+        <ul class="features" style="display: none;">
+        <li style="background: url('images/btn_bg1.png') no-repeat;">
+            <a href="">
+                <img src="images/notes.png" alt=""/>
+                <p>我的待办</p>
+            </a>
+        </li>
+        <li style="background: url('images/btn_bg2.png') no-repeat;">
+            <a href="">
+                <img src="images/star.png" alt=""/>
+                <p>我的OA</p>
+            </a>
+        </li>
+        <li style="background: url('images/btn_bg3.png') no-repeat;margin-right: 0;">
+            <a href="">
+                <img src="images/pc.png" alt=""/>
+                <p>员工自助</p>
+            </a>
+        </li>
+        <li style="background: url('images/btn_bg4.png') no-repeat;margin-bottom: 0;">
+            <a href="">
+                <img src="images/email.png" alt=""/>
+                <p>我的邮件</p>
+            </a>
+        </li>
+        <li style="background: url('images/btn_bg5.png') no-repeat;margin-bottom: 0;">
+            <a href="">
+                <img src="images/tower.png" alt=""/>
+                <p>服务区</p>
+            </a>
+        </li>
+        <li style="background: url('images/btn_bg6.png') no-repeat;margin-right: 0;margin-bottom:0;">
+            <a href="">
+                <img src="images/files.png" alt=""/>
+                <p>进入办公平台</p>
+            </a>
+        </li>
+    </ul>
         <div class="slider borderR hidden">
             <ul class="slider_list">
                 <li>
@@ -1314,6 +1315,17 @@
     $(".adClose").click(function () {
         $(".ad").css("display","none");
         $(".ad").parent().css("padding-top","0.5rem");
+    });
+</script>
+<!--iframe-->
+<script type="text/javascript">
+    $(function () {
+        $("iframe").load(function () {
+            var iframeHeight = $(".features").height();
+            var iframeWidth = $(".features").width()+20;
+            $("iframe").height(iframeHeight);
+            $("iframe").width(iframeWidth);
+        });
     });
 </script>
 <!--[if lt IE 9]>
