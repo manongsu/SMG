@@ -25,12 +25,12 @@
             <ul>
                 <li><a href="index.html">首页</a></li>
                 <li class="active"><a href="newsList1.html">新闻</a></li>
-                <li><a href="">服务</a></li>
-                <li><a href="">购物</a></li>
+                <li><a href="service.html">服务</a></li>
+                <li><a href="groupBuy.html">购物</a></li>
                 <li><a href="">论坛</a></li>
-                <li><a href="">宣传</a></li>
-                <li><a href="">工具包</a></li>
-                <li><a href="">部门列表</a></li>
+                <li><a href="publicity.html">宣传</a></li>
+
+                <li><a href="department.html">部门列表</a></li>
             </ul>
         </nav>
         <form class="search hidden" action="">
@@ -63,12 +63,12 @@
     <ul class="menu_link">
         <li><a href="index.html">首页</a></li>
         <li class="active"><a href="newsList1.html">新闻</a></li>
-        <li><a href="">服务</a></li>
-        <li><a href="">购物</a></li>
+        <li><a href="service.html">服务</a></li>
+        <li><a href="groupBuy.html">购物</a></li>
         <li><a href="">论坛</a></li>
-        <li><a href="">宣传</a></li>
-        <li><a href="">工具包</a></li>
-        <li><a href="">部门列表</a></li>
+        <li><a href="publicity.html">宣传</a></li>
+
+        <li><a href="department.html">部门列表</a></li>
     </ul>
 </nav>
 <!--------------主体内容---------------->
@@ -102,9 +102,17 @@
         <div class="writeComment">
             <h3>发表评论<p>（现有<span>7</span>人对本文进行了评论）</p></h3>
             <form action="">
-                <div style="float: left;"><label for="">昵称：</label><input type="text"/><span>(昵称最长为19个中文字符)</span></div>
-                <div style="float: right;"><label for="">上传文件</label><a href=""></a><span>(昵称最长为19个中文字符)</span></div>
-                <textarea></textarea>
+                <div class="top">
+                    <div style="float: left;"><label>昵称：</label><input type="text"/><span>(昵称最长为19个中文字符)</span></div>
+                    <div style="float: right;"><label>上传文件</label><a href=""></a><span>(昵称最长为19个中文字符)</span></div>
+                </div>
+                <textarea placeholder="请输入您要评论的内容"></textarea>
+                <div class="bottom">
+                    <img src="images/expression1.png" alt=""/>
+                    <img src="images/expression2.png" alt=""/>
+                    <img src="images/expression3.png" alt=""/>
+                    <button class="mainC">提交评论</button>
+                </div>
             </form>
         </div>
         <!--评论列表-->
@@ -121,7 +129,7 @@
                         <img src="images/no.png" alt="">
                         <span class="no">严重反对(2)</span>
                         <span class="line"></span>
-                        <span class="mainC">回复</span>
+                        <span class="mainC btnShowComment" flag="1"><span class="mainC">收起</span>回复(2)</span>
                     </p>
                     <ul class="commentComment">
                         <li>
@@ -139,6 +147,10 @@
                             </p>
                         </li>
                     </ul>
+                    <div class="inputWrap">
+                        <img src="images/edit.png" alt="">
+                        <input class="" type="text" placeholder="我也说一句"/>
+                    </div>
                 </li>
                 <li class="commentArticle">
                     <img src="images/user_photo.png" alt=""/>
@@ -151,8 +163,12 @@
                         <img src="images/no.png" alt="">
                         <span class="no">严重反对(2)</span>
                         <span class="line"></span>
-                        <span class="mainC">回复</span>
+                        <span class="mainC btnShowComment" flag="0"><span class="mainC">展开</span>回复(0)</span>
                     </p>
+                    <div class="inputWrap">
+                        <img src="images/edit.png" alt="">
+                        <input class="" type="text" placeholder="我也说一句"/>
+                    </div>
                 </li>
                 <li class="commentArticle">
                     <img src="images/user_photo.png" alt=""/>
@@ -165,13 +181,24 @@
                         <img src="images/no.png" alt="">
                         <span class="no">严重反对(2)</span>
                         <span class="line"></span>
-                        <span class="mainC">回复</span>
+                        <span class="mainC btnShowComment" flag="0"><span class="mainC">展开</span>回复(0)</span>
                     </p>
+                    <div class="inputWrap">
+                        <img src="images/edit.png" alt="">
+                        <input class="" type="text" placeholder="我也说一句"/>
+                    </div>
                 </li>
                 <li class="commentArticle">
                     <img src="images/user_photo.png" alt=""/>
                     <p class="name mainC">我爱番茄网<span class="time">·2017-07-25 08:00</span></p>
                     <p class="content">主流媒体以时不我待、只争朝夕的紧迫感，加速在互联网开疆拓土</p>
+                    <div class="commentImg">
+                        <img src="images/message1.png" alt=""/>
+                        <img src="images/message1.png" alt=""/>
+                        <img src="images/message1.png" alt=""/>
+                        <img src="images/message1.png" alt=""/>
+                        <img src="images/message1.png" alt=""/>
+                    </div>
                     <p class="btn_group">
                         <img src="images/yes.png" alt="">
                         <span class="yes">强烈支持(26)</span>
@@ -179,8 +206,12 @@
                         <img src="images/no.png" alt="">
                         <span class="no">严重反对(2)</span>
                         <span class="line"></span>
-                        <span class="mainC">回复</span>
+                        <span class="mainC btnShowComment" flag="0"><span class="mainC">展开</span>回复(0)</span>
                     </p>
+                    <div class="inputWrap">
+                        <img src="images/edit.png" alt="">
+                        <input class="" type="text" placeholder="我也说一句"/>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -472,6 +503,10 @@
         </div>
     </div>
 </div>
+<footer>
+    <p><a href="">设为首页 | </a><a href="">MG统一门户 | </a><a href="">办公用品采购系统 | </a><a href="">新华社  | </a><a href="">公文系统 | </a><a href="">外事管理系统 | </a><a href="">串联单查询 | </a><a href="">管理信息平台</a></p>
+    <p style="margin-top: 10px;">Copyright &copy; 番茄网网 沪ICP备1234568号-1  沪公网安备 110101088888888号   </p>
+</footer>
 <div id="mask" style="width: 100%;height: 100%;background-color: rgba(0,0,0,.5);position: absolute;top:0;left:0;display: none;z-index: 100;"></div>
 <script type="text/javascript" src="js/jquery.1.9.1.js"></script>
 <script type="text/javascript" src="js/banner.js"></script>
@@ -514,5 +549,28 @@
         }) ;
     });
 </script>
+<!--评论-->
+<script type="text/javascript">
+    $(function () {
+        $(".commentArticle .inputWrap").css("width",$('.commentComment').width()-30);
+        $(".commentArticle .inputWrap input").css("width",$('.commentComment').width()-56);
+        $(".writeComment textarea").css("width",$('.writeComment form').width()-30);
+        $(".btnShowComment").click(function () {
+            var flag = $(this).attr("flag");
+            if(flag=="1"){
+                $(this).parent().next(".commentComment").slideUp(300);
+                $(this).attr("flag","0");
+                $(this).children("span").html("展开");
+            }else if(flag=="0"){
+                $(this).parent().next(".commentComment").slideDown(300);
+                $(this).attr("flag","1");
+                $(this).children("span").html("收起");
+            }
+        });
+    });
+</script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/rem.js"></script>
+<![endif]-->
 </body>
 </html>

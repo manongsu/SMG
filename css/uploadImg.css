@@ -1,0 +1,16 @@
+.orderTitle{margin-top:0.375rem;font-size: 20px;line-height: 1.15rem;border-bottom: 2px solid #f93402;}
+form .orderMessage{border: 1px solid #f0f0f0;border-top:none;padding: 0 0.75rem;}
+.orderMessage h3{font-size: 16px;line-height: 16px;margin: 0.75rem 0;}
+.orderMessage h3 span{font-size: 14px;line-height: 16px;color: #666;font-weight: normal;}
+.orderMessage .formGroup{overflow: hidden;padding-bottom: 0.75rem;border-bottom: 1px solid #f0f0f0;}
+.orderMessage label{display: block;width:2.2rem;height:1.125rem;float: left;font-size: 16px;line-height: 1.125rem;font-weight: normal;}
+.orderMessage input{width:5.2rem;height:1.075rem;float:left;border:1px solid #cacaca;margin-right: 0.75rem;padding: 0 0.25rem;}
+.orderMessage input.long{width:15.1rem;height:1.075rem;float:left;border:1px solid #cacaca;margin-left: 0.25rem;padding: 0 0.25rem;}
+.orderMessage .formGroup button{width:3.1rem;height:1.1rem;float:left;border:1px solid #cacaca;margin-left: 0.25rem;
+    background: -webkit-linear-gradient(top,#fff,#e5e5e5); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom,#fff,#e5e5e5); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom,#fff,#e5e5e5); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom,#fff,#e5e5e5); /* 标准写法 */
+}
+.submit{float: right;overflow:hidden;margin-top: 0.25rem;}
+.submit button{width: 4.375rem;height: 1.125rem;color:#fff;}

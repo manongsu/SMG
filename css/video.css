@@ -1,7 +1,7 @@
 .brand{float: left;width: 20rem;}
 .main_right{margin-top: -0.75rem;}
 /*-------------------------------left-------------------------------*/
-.videoBanner{height: 11.25rem;margin-top: 0.5rem;}
+.videoBanner{height: 14.5rem;margin-top: 0.5rem;}
 .videoBanner video{width:100%;height: 10.5rem;background-color: #000;}
 .videoBanner .play{position: absolute;top:50%;left:50%;width:48px;height:48px;margin-top: -24px;margin-left: -24px;}
 .videoBanner .control{position: absolute;bottom:0;left:0;width:100%;height:30px;background-color: #248afe;}
@@ -46,6 +46,46 @@ h2.title{font-size: 26px;line-height:26px;margin-top: 0.75rem;margin-bottom: 0.5
 p.des{font-size: 14px;line-height:14px;color:#999;padding-bottom: 0.375rem;border-bottom: 1px solid #e5e5e5;}
 p.des span.viewNum{float: right;color:#999;}
 p.des img{float:left;height: 14px;margin-right: 5px;}
+/*发表评论*/
+.writeComment{border: 1px solid #e5e5e5;}
+.writeComment h3{height: 1.4rem;line-height: 1.4rem;border-bottom: 1px dashed #e5e5e5;padding: 0 0.5rem;font-size: 16px;}
+.writeComment h3 p{float: right;color: #999;font-size: 14px;font-weight: normal;}
+.writeComment h3 p span{color: #0099ff;font-weight: normal;}
+.writeComment form{margin:0.5rem;border: 1px solid #ccc;border-radius: 3px;}
+.writeComment form .top{height:0.55rem;padding: 0.175rem 0.375rem;
+    background: -webkit-linear-gradient(top,#fff,#e0e0e0); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom,#fff,#e0e0e0); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom,#fff,#e0e0e0); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom,#fff,#e0e0e0); /* 标准写法 */
+}
+.writeComment form .top div{height: 100%;}
+.writeComment form label{line-height: 0.55rem;font-weight: bold;font-size: 14px;float: left;}
+.writeComment form input{width:4.5rem;height: 0.55rem;line-height: 0.55rem;background-color: #f7f7f7;border: 1px solid #ccc;float: left;}
+.writeComment form span{margin-left:0.25rem;font-size: 14px;color: #666;float: left;}
+.writeComment form textarea{display: block;width:100%;padding:0.375rem;height: 2.25rem;background-color: #f7f7f7;border-bottom: 1px solid #ccc;}
+.writeComment form .bottom{height:1.3rem;padding: 0 0.375rem;background-color: #fafafa;}
+.writeComment form .bottom img{height:0.75rem;float: left;background-color: #fff;margin: 0.275rem 0.125rem;}
+.writeComment form .bottom button{width: 2.7rem;height:0.75rem;border: 1px solid #f93402;border-radius: 5px;float: right;background-color: #fff;margin: 0.275rem 0;}
+/*评论列表*/
+.commentList{border: 1px solid #e5e5e5;border-bottom: none;border-top: none;}
+.commentList .commentArticle{padding:0.5rem;border-bottom: 1px solid #e5e5e5;overflow: hidden;}
+.commentList .commentArticle>img{float: left;margin-right: 15px;width:1rem;height: 1rem;}
+.commentList .commentArticle .name{font-size: 14px;line-height: 20px;float: left;width: 90%;}
+.commentList .commentArticle .name span{color: #999;font-size: 14px;}
+.commentList .commentArticle .content{font-size: 14px;line-height: 20px;float: left;width: 90%;}
+.commentList .commentArticle .btn_group{float: right;height:16px;margin-top:10px;height: 16px;}
+.commentList .commentArticle>.btn_group{margin-right: 15px;}
+.commentList .commentArticle .btn_group span{float:left;font-size: 14px;display: inline-block;height: 16px;line-height: 16px;}
+.commentList .commentArticle .btn_group img{float:left;margin-right: 10px;}
+.commentList .commentArticle .btn_group .line{float:left;width: 1px;height: 12px;margin:2px 0.5rem;background-color:#f0f0f0; }
+.commentList .commentArticle .commentImg{float:left;width:90%;margin: 0.25rem 0 0.25rem 1.375rem;font-size: 0;}
+.commentList .commentArticle .commentImg img{width: 3.4rem;height: 3.4rem;margin:0 0.25rem 0.25rem 0;}
+.commentList .commentArticle .commentComment{width: 90%;float: right;border: 1px solid #e5e5e5;margin-top: 0.5rem;}
+.commentList .commentArticle .commentComment li{padding: 15px;border-bottom: 1px dashed #e5e5e5;overflow: hidden;}
+.commentList .commentArticle .commentComment li:last-child{border-bottom: none;}
+.commentList .commentArticle .inputWrap{float: right;border: 1px solid #e5e5e5;margin-top: 0.5rem;height: 0.85rem;padding: 0 0.375rem;}
+.commentList .commentArticle .inputWrap img{float:left;width: 0.4rem;height: 0.4rem;margin: 0.2225rem 0.25rem 0.2225rem 0;}
+.commentList .commentArticle .inputWrap input{float:left;height: 0.85rem;}
 /*------------------------------right-------------------------------*/
 /*uploadImg*/
 .uploadImg{display: block;height: 1rem;border-radius: 5px;font-size: 14px;color: #fff;line-height: 1rem;text-align: center;margin: 50px 0 0px 0;}
@@ -72,15 +112,14 @@ p.des img{float:left;height: 14px;margin-right: 5px;}
 .leaderNewsList li h5{font-size: 16px;font-weight: normal;overflow: hidden;text-overflow: ellipsis;white-space:nowrap;margin-bottom: 15px;}
 .leaderNewsList li p{color: #999;font-size: 14px;float: left;}
 /*commentList*/
-.commentList{}
-.commentList h4{height:1.3rem;line-height:1.3rem;border-bottom: 1px solid #e5e5e5;font-size: 16px;}
-.commentList h4 i{float:left;width: 4px;height: 4px;margin: 24px 5px 24px 0;border-radius: 2px;}
-.commentList li{padding: 18px 0;border-bottom: 1px solid #e5e5e5;font-size: 0;overflow: hidden;}
-.commentList li img{float:left;width:41px;height:41px;margin-right: 11px;}
-.commentList li p{float:left;width:288px;height: 17px;font-size: 14px;line-height: 17px;}
-.commentList li p span.name{font-size:16px;float: left;}
-.commentList li p span.time{float: right;}
-.commentList li p.content{margin-top: 7px;}
+.newCommentList h4{height:1.3rem;line-height:1.3rem;border-bottom: 1px solid #e5e5e5;font-size: 16px;}
+.newCommentList h4 i{float:left;width: 4px;height: 4px;margin: 24px 5px 24px 0;border-radius: 2px;}
+.newCommentList li{padding: 18px 0;border-bottom: 1px solid #e5e5e5;font-size: 0;overflow: hidden;}
+.newCommentList li img{float:left;width:41px;height:41px;margin-right: 11px;}
+.newCommentList li p{float:left;width:288px;height: 17px;font-size: 14px;line-height: 17px;}
+.newCommentList li p span.name{font-size:16px;float: left;}
+.newCommentList li p span.time{float: right;color:#999;}
+.newCommentList li p.content{margin-top: 7px;}
 /*相关视频*/
 .relatedVideo{padding-bottom: 20px;}
 .relatedVideo h4{height:1.25rem;line-height: 1.25rem;font-size: 16px;}

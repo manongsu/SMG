@@ -10,7 +10,7 @@ ol,ul,li{list-style: none;}
 html,body{width: 100%;transition: transform .5s ease;}
 .swipe{transform: translate(-130px, 0);margin-right: -130px;overflow: hidden;}
 /*---------------------------header---------------------------*/
-header{height: 53px;border-bottom: 1px solid #dadada;padding-top: 9px;position: relative;}
+header{height: 53px;border-bottom: 1px solid #dadada;padding-top: 9px;position: relative;background-color: #fff;}
 header .container{height: 53px;}
 /*logo*/
 .logo{float: left;font-size: 0;}
