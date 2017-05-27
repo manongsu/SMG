@@ -2,10 +2,9 @@ body{background-color: #f9f9f9;}
 /*serviceList*/
 .serviceList{overflow: hidden;}
 .serviceList li{width: 4rem;height:4.85rem;float:left;background-color:#fff;position: relative;border-bottom: 1px solid #f4f4f4;}
-.serviceList li .serviveIcon{width: 2rem;height:2rem;margin: 1rem 1rem 0;background:url("../images/service.png") top left no-repeat;}
+.serviceList li .serviveIcon{width: 2rem;height:2rem;margin: 1rem 1rem 0;background:url("../images/service.png") top left no-repeat;background-size: 100%;}
 .serviceList li .border{width:1px;height:4.85rem;background-color: #f4f4f4;position: absolute;top:0;right:0;}
 .serviceList li p{margin:0.5rem 0 1rem;font-size: 14px;line-height: 14px;text-align: center;}
-
 .tableDownload{background-color: #fff;}
 .tableDownload h3{height: 55px;border-bottom: 1px solid #ededed;font-size: 16px;line-height: 55px;padding: 0 15px;}
 .tableDownload  ul{margin-top:5px;padding-bottom: 12px;}
@@ -22,6 +21,12 @@ body{background-color: #f9f9f9;}
 .tableDownload  li:hover .iconTextActive{display: block;}
 .tableDownload  li:hover span{color: #f93402;}
 .tableDownload  li:hover .iconDownload{display: block;}
-
-
 a.loadMore{display:block;width:100%;height: 1.1rem;text-align: center;line-height: 1.1rem;font-size: 14px;background-color: #f4f4f4;margin-top: 0.25rem;}
+@media screen and (min-width: 320px) and (max-width: 739px){
+    .serviceList li{width: 5rem;height:6rem;}
+    .serviceList li .serviveIcon{width: 3rem;height:3rem;}
+    .serviceList li .border{width:1px;height:6rem;background-color: #f4f4f4;position: absolute;top:0;right:0;}
+}
+@media screen and (min-width: 740px) and (max-width: 1199px){
+    
+}

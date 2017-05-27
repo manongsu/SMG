@@ -21,3 +21,6 @@ $(function () {
     tab($(".tab li").eq(0),".tabWrap");
     absoluteHeight($(".tabWrap"));
 });
+$(window).resize(function () {
+    absoluteHeight($(".tabWrap"));
+});

@@ -154,3 +154,12 @@ article p{font-size: 16px;}
 .commentList .commentArticle .inputWrap img{float:left;width: 0.4rem;height: 0.4rem;margin: 0.2225rem 0.25rem 0.2225rem 0;}
 .commentList .commentArticle .inputWrap input{float:left;height: 0.85rem;}
 .newsList h2{height: 1.3rem;line-height: 1.3rem;border-top: 2px solid #f93402;border-bottom: 1px solid #e5e5e5;font-size: 16px;}
+@media screen and (min-width: 320px) and (max-width: 739px){
+    .media_list a h3{height:36px;font-size: 16px;line-height: 18px;}
+    .media_list p.des span{font-size: 12px;}
+    article h2{font-size: 20px;}
+}
+@media screen and (min-width: 740px) and (max-width: 1199px){
+    .media_list a h3{height:48px;font-size: 18px;line-height: 24px;}
+    .media_list p.des span{font-size: 14px;}
+}

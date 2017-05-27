@@ -1,7 +1,7 @@
 /*--------------------------------newsList-----------------------*/
 /*form*/
 form.searchNum{margin-top: 15px;width: 19rem;padding: 0.5rem;border-top: 1px solid #e5e5e5;overflow: hidden;}
-form.searchNum input{float:left;width: 14.8rem;height: 1.15rem;border: 2px solid #f93402;padding-left: 0.4rem;}
+form.searchNum input{float:left;width: 14.8rem;height: 1.15rem;border: 2px solid #f93402;padding-left: 0.4rem;font-size: 14px;}
 form.searchNum button{float:left;width: 3.5rem;height: 1.25rem;font-size: 18px;color: #fff;}
 form.searchNum h2{font-size: 16px;margin-bottom: 0.5rem;text-align: center;}
 form.searchNum p{font-size: 14px;margin-top: 0.375rem;}
@@ -89,3 +89,11 @@ table.numList th,table.numList td{height:1.2rem;border-bottom: 1px solid #e5e5e5
 .publishNum .label p{position: absolute;top:0;left:0;width:100%;color: #fff;text-align: center;line-height: 18px;font-size: 14px;}
 .publishNum li span{font-size: 14px;float: left;line-height: 34px;}
 .publishNum li span.percent{float: right;color: #999;}
+
+
+@media screen and (min-width: 320px) and (max-width: 739px){
+    form.searchNum input{font-size: 12px;height: 24px;}
+    form.searchNum button{font-size: 12px;height: 28px;}
+    .tableTitle{font-size: 14px;}
+    table.numList{font-size: 12px;height: 32px;line-height:32px;}
+}

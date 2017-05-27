@@ -1,3 +1,7 @@
+.banner{width: 13.25rem;height: 10rem;}
+.banner_list li p{font-size: 18px;}
+.video{float:right;width: 6.5rem;height: 10rem;}
+.video li{width: 100%;height: 4.875rem;}
 /*广告*/
 .ad{width: 100%;height: 2.5rem;margin: 0.5rem 0;position: relative;}
 .ad>a>img{width: 100%;height: 2.5rem;}
@@ -11,7 +15,7 @@
 .banner_list{width: 100%;height: 100%;position: relative;}
 .banner_list li{width: 100%;height: 100%;position: absolute;top:0;left:0;display: none;}
 .banner_list li img{width: 100%;height: 100%;}
-.banner_list li p{width: 90%;height:16%;padding:2% 5%;color: #fff;background-color:rgba(0,0,0,0.6);position: absolute;left: 0;bottom:0;word-break: break-all;line-height: 1.5;overflow: hidden;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);}
+.banner_list li p{width: 90%;height:16%;padding:2% 5%;color: #fff;background-color:rgba(0,0,0,0.6);position: absolute;left: 0;bottom:0;word-break: break-all;line-height: 1.5;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);}
 .banner .next,.banner .prev{display:block;height:80%;width: 3rem;;top:0;background-size: 100% 100%;position: absolute;top:0;}
 .banner .next{left: 0;background: url("../images/left_bg.png") no-repeat;}
 .banner .next img{left:0.375rem;}
@@ -156,3 +160,15 @@
 .birthday li{float: left;width: 33.333333%;text-align: center;}
 .birthday li img{width: 82px;margin-top: 10px;}
 .birthday li p{margin-top: 10px;font-size: 18px;text-align: center;}
+@media screen and (min-width: 320px) and (max-width: 739px){
+    .banner{width: 20rem;height: 15.09434rem;}
+    .banner_list li p{font-size: 16px;}
+    .media_list a h3{height:36px;font-size: 16px;line-height: 18px;}
+    .media_list p.des span{font-size: 12px;}
+}
+@media screen and (min-width: 740px) and (max-width: 1199px){
+    .banner{width: 20rem;height: 15.09434rem;}
+    .banner_list li p{font-size: 18px;}
+    .media_list a h3{height:48px;font-size: 18px;line-height: 24px;}
+    .media_list p.des span{font-size: 14px;}
+}
