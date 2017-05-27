@@ -5,7 +5,7 @@
 .list_group .media_list{padding: 0.375rem 0;border-bottom: 1px solid #f0f0f0;height: 3.75rem;position: relative;}
 .media_list a{display: block;width: 100%;height: 100%;overflow: hidden;}
 .media_list a .media_left{float: left;height: 100%;width: 6rem;margin-right: 0.625rem;}
-.media_list a h3{float: left;width: 13.25rem;height:24px !important;padding-right: 0.125rem;margin-bottom: 0.375rem;overflow: hidden;overflow: hidden;text-overflow: ellipsis;white-space: normal;}
+.media_list a h3{float: left;width: 13.25rem;height:24px;padding-right: 0.125rem;margin-bottom: 0.375rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .media_list a h3.active{color: #f93402;}
 .media_list a h3:hover{color: #f93402;}
 .media_list p.des{color: #999;height:14px;width: 13.25rem;float: left;}
@@ -27,12 +27,12 @@ article .viewNum{float: right;}
 article p{font-size: 16px;}
 /*投票选项*/
 .voteCheck{overflow: hidden;margin-bottom: 0.75rem;}
-.voteCheck li.box{width: 8.95rem;height: 5.65rem;padding: 0.375rem;border: 1px solid #e5e5e5;float: left;font-size: 0;}
+.voteCheck li.box{width: 8.95rem;padding: 0.375rem;border: 1px solid #e5e5e5;float: left;font-size: 0;}
 .voteCheck li.box img{width: 100%;margin-bottom: 0.375rem;}
-.voteCheck li.box p{font-size: 16px;float: left;line-height:0.8rem;width: 6.5rem;overflow: hidden;text-overflow: ellipsis;white-space: normal;}
+.voteCheck li.box p{font-size: 16px;float: left;line-height:0.8rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .voteCheck li.box button{width: 1.9rem;height: 0.8rem; font-size: 14px;color: #fff;float: right;}
 .voteCheck li.line{float:left;width:18.95rem;height: 16px;padding: 0.5rem;border: 1px solid #e5e5e5;margin-top: 0.5rem;position: relative;}
-.voteCheck li.line p{float: left;width:17rem;font-size: 16px;line-height: 16px;overflow: hidden;text-overflow: ellipsis;white-space: normal;}
+.voteCheck li.line p{float: left;width:17rem;font-size: 16px;line-height: 16px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .voteCheck li.line button{width: 1.9rem;height: 0.8rem; font-size: 14px;color: #fff;position:absolute;top:50%;right: 0.5rem;margin-top: -0.4rem;}
 /*投票结果*/
 .voteResult h3{font-size: 16px;line-height: 16px;margin-bottom: 0.75rem;}
@@ -113,3 +113,17 @@ article p{font-size: 16px;}
 .publishNum .label p{position: absolute;top:0;left:0;width:100%;color: #fff;text-align: center;line-height: 18px;font-size: 14px;}
 .publishNum li span{font-size: 14px;float: left;line-height: 34px;}
 .publishNum li span.percent{float: right;color: #999;}
+@media screen and (min-width: 320px) and (max-width: 739px){
+    .media_list a h3{height:18px;font-size: 16px;line-height: 18px;}
+    .media_list p.des span{font-size: 12px;}
+    article h2{font-size:16px;}
+    .voteCheck li.box p{font-size: 14px;float: left;line-height:20px;}
+    .voteCheck li.line{width: 18.85rem;height: 20px;}
+    .voteCheck li.box button{width: 48px;height:20px; font-size: 14px;}
+    .voteCheck li.line p{font-size: 14px;line-height: 20px;}
+    .voteCheck li.line button{width: 48px;height: 20px;margin-top: -10px;}
+}
+@media screen and (min-width: 740px) and (max-width: 1199px){
+    .media_list a h3{height:48px;font-size: 18px;line-height: 24px;}
+    .media_list p.des span{font-size: 14px;}
+}

@@ -157,7 +157,7 @@ article p{font-size: 16px;}
 @media screen and (min-width: 320px) and (max-width: 739px){
     .media_list a h3{height:36px;font-size: 16px;line-height: 18px;}
     .media_list p.des span{font-size: 12px;}
-    article h2{font-size: 20px;}
+    article h2{font-size: 18px;}
 }
 @media screen and (min-width: 740px) and (max-width: 1199px){
     .media_list a h3{height:48px;font-size: 18px;line-height: 24px;}

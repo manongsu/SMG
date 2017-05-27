@@ -3,7 +3,7 @@
 /*waterFall*/
 .waterFall{margin-top: 15px;width: 20rem;position: relative;}
 .waterFall ul{overflow: hidden;}
-.waterFall ul li{width: 6.33rem;border: 1px solid #f4f4f4;font-size: 0;position: absolute;}
+.waterFall ul li{width: 6.2rem;border: 1px solid #f4f4f4;font-size: 0;position: absolute;}
 .waterFall ul li.right{margin-right:0;}
 .waterFall ul li a{display: block;}
 .waterFall ul li img{width: 100%;width: 5.5rem;margin: 0.25rem;border-radius: 5px;}
