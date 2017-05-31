@@ -42,7 +42,7 @@ function waterFall() {
     $(".waterFall li").each(function () {
         var index = $(this).index() + 1;
         if(index<=3){
-            check($(this),index)
+            check($(this),index);
         }else{
             insert($(this));
         }
