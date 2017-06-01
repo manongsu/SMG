@@ -58,7 +58,7 @@ nav.phoneMenu .menu_link li.active{background-color: #3d3d3d;border-top: 1px sol
 .brand{margin-top: 0.4rem;height: 14px;line-height: 14px;font-size: 14px;}
 .brand a{font-size: 12px;line-height: 14px}
 /*-----------------------------------------------------------*/
-.container{width: 29.25rem;padding:0 0.375rem;margin: 0 auto;overflow: hidden;}
+
 /*footer*/
 footer{width: 100%;background-color: #484242;text-align: center;padding: 30px 0;margin-top: 20px;}
 footer a,footer p{font-size: 14px;color: #c4bebe;line-height: 19px;}

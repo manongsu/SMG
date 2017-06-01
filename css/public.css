@@ -1,308 +1,103 @@
-.grog_prompt{
-	width:28.7rem;
-	/*height:2.5rem;*/
-	border:1px solid red;
-	font-size:14px;
-	color:#f93402;
-	line-height:0.45rem;
-	padding: 0.25rem;
-	margin-top:0.3rem;
-	/*margin-bottom:0.6rem;*/
-}
-.grogshop_list{
-	clear:both;
-	margin:0.5rem 0 0.25rem 0;
-	overflow:hidden;
-	border-bottom:1px solid #f0f0f0;
-	padding-bottom:0.25rem;
-}
-.grogshop_list li{
-	float:left;
-	width:6.75rem;
-	margin-right:0.75rem;
-	margin-bottom: 0.5rem;
-}
-.grogshop_list li .grog_shop_img{
-	width:100%;
-	height:4.2rem;
-}
-.grogshop_list li .grog_shop_img img{
-	width:100%;
-}
-.grogshop_list li .grog_name{
-	font-size:18px;
-	color:#000;
-	line-height:0.6rem;
-	margin:0.25rem 0 0.2rem 0;
-}
-.grogshop_list li .grog_site{
-	font-size:14px;
-	color:#666;
-}
-.grogshop_list li .grog_site span{
-	font-size:14px;
-	color:#666;
-}
-.grogshop_list li .grog_phone_num{
-	line-height:0.75rem;
-}
-.grogshop_list li .grog_price{
-	font-size:18px;
-	color:#ff3300;
-	line-height:0.75rem;
-}
-.grogshop_list li .grog_price span{
-	font-size:0.6rem;
-	color:#ff3300;
-}
-.grogshop_list li .grog_bazaar_price{
-	font-size:14px;
-	color:#666;
-	line-height:0.75rem;
-}.grogshop_list li .grog_bazaar_price del{
-	font-size:14px;
-	color:#666;
-}
-.grogshop_list li .grog_comm{
-	height:0.5rem;
-}
-.grogshop_list li .grog_comm img{
-	width:0.45rem;
-	height:0.45rem;
-	vertical-align:top;
-}
-.loadMore {
-    display: block;
-    margin-top: 0.25rem;
-    height: 1.125rem;
-    background-color: #fafafa;
-    font-size: 14px;
-    color: #999999;
-    line-height: 1.125rem;
-    text-align: center;
-}
-
-.grogshop_list  .mar-r{
-	margin-right:0;
-}
-
-.grog_footer{
-	margin-top:0.25rem;
-}
-
-
+.grog_prompt{width:28.7rem;border:1px solid red;font-size:14px;color:#f93402;line-height:0.45rem;padding: 0.25rem;margin-top:0.3rem;}
+.grogshop_list{clear:both;margin:0.5rem 0 0.25rem 0;overflow:hidden;border-bottom:1px solid #f0f0f0;padding-bottom:0.25rem;}
+.grogshop_list li{float:left;width:6.75rem;margin-right:0.75rem;margin-bottom: 0.5rem;}
+.grogshop_list li .grog_shop_img{width:100%;height:4.2rem;}
+.grogshop_list li .grog_shop_img img{width:100%;}
+.grogshop_list li .grog_name{font-size:18px;color:#000;line-height:0.6rem;margin:0.25rem 0 0.2rem 0;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.grogshop_list li .grog_site{font-size:14px;color:#666;}
+.grogshop_list li .grog_site span{font-size:14px;color:#666;}
+.grogshop_list li .grog_phone_num{line-height:0.75rem;}
+.grogshop_list li .grog_price{font-size:18px;color:#ff3300;line-height:0.75rem;}
+.grogshop_list li .grog_price span{font-size:0.6rem;color:#ff3300;}
+.grogshop_list li .grog_bazaar_price{font-size:14px;color:#666;line-height:0.75rem;}
+.grogshop_list li .grog_bazaar_price del{font-size:14px;color:#666;}
+.grogshop_list li .grog_comm{height:0.5rem;}
+.grogshop_list li .grog_comm img{width:0.45rem;height:0.45rem;vertical-align:top;}
+.loadMore {display: block;margin-top: 0.25rem;height: 1.125rem;background-color: #fafafa;font-size: 14px;color: #999999;line-height: 1.125rem;text-align: center;}
+.grogshop_list  .mar-r{margin-right:0;}
+.grog_footer{margin-top:0.25rem;}
 /*酒店预订页面*/
-.reserve{
-	font-size:20px;
-	color:#f93402;
-	line-height:0.6rem;
-	margin-top:0.75rem;
-}
-.rese_information{
-	border:1px solid #cccccc;
-	border-top:2px solid #f93402;
-	padding:0.75rem;
-	margin-top:0.3rem;
-}
-.rese_information .rese_info{
-	font-size:16px;
-	color:#333;
-}
-.rese_information .introduce{
-	border:1px solid #e5e5e5;
-	background:#fafafa;
-	overflow:hidden;
-	margin-top:0.75rem;
-	border-radius:3px;
-}
-.rese_information .introduce div{
-	text-align:center;
-	font-size:16px;
-	color:#000;
-	line-height:1rem;
-}
-.rese_information .introduce .name{
-	float:left;
-	width:31%;
-}
-.rese_information .introduce .price{
-	width:69%;
-	float:right;	
-}
-.rese_information .rese_name{
-	padding:0.6rem 0.5rem;
-	border-bottom:1px solid #e5e5e5;
-	overflow:hidden;
-}
-.rese_information .rese_name .name{
-	float:left;
-	width:31%;
-} 
-.rese_information .rese_name .name .pic{
-	float:left;
-	width:3.3rem;
-	height:2.05rem;
-	}
-.rese_information .rese_name .name .pic img{
-	width:100%;
-	vertical-align:middle;
-}
-.rese_information .rese_name .name .site{
-	float:left;
-	margin-left:0.5rem;
-	margin-top:0.3rem;
-}
-.rese_information .rese_name .name .site p{
-	font-size:16px;
-	color:#000;
-	line-height:0.7rem;
-}
-.rese_information .rese_name .name .site .location{
-	font-size:16px;
-	color:#666;
-}
-.rese_information .rese_name .price{
-	float:left;
-	width:69%;
-	text-align:center;
-	font-size:16px;
-	color:#000;
-	line-height:2.05rem;
-}
-.rese_information .room_info{
-	padding:0.6rem 0.5rem;
-	border-bottom:1px solid #e5e5e5;
-	overflow:hidden;
-}
-.rese_information .room_info .room{
-	font-size:16px;
-	color:#333333;
-}.rese_information .room_info .room span{
-	font-size:14px;
-	color:#666;
-	font-weight:normal;
-}
-.rese_information .room_info .room_num{
-	margin-top:0.5rem;
-}
-.rese_information .room_info .room_num span{
-	font-size:16px;
-	color:#333333;
-	
-}
-.rese_information .room_info .room_num select{
-	display:inline-block;
-	width:5.75rem;
-	height:1.1rem;
-	font-size:16px;
-	color:#666;
-	border:1px solid #e5e5e5;
-	text-indent: 0.2rem;
-	line-height:1.1rem;
-	border-radius:3px;
-}
-.rese_information .room_info .room_num .time{
-	display:inline-block;
-	border:1px solid #e5e5e5;
-	width:5.75rem;
-	height:1.05rem;
-	vertical-align:middle;
-	margin-top:0.25rem;
-	line-height:0.9rem;
-	border-radius:3px;
-}
-.rese_information .room_info .room_num .time input{
-	width:4.7rem;
-	height:1rem;
-	font-size:16px;
-	color:#666;
-	text-indent: 0.3rem;
-	vertical-align:middle;
-	outline: none;
-}
-.rese_information .room_info .room_num .time img{
-	vertical-align:middle;
-} 
-.replenish_box{
-	width:21.5rem;
-}
-.rese_information .room_info .replenish{
-	height:1.05rem;
-	width:4.3rem;
-	border:1px solid #e5e5e5;
-	float:left;
-	margin-right:0.75rem;
-	font-size:16px;
-	color:#333;
-	text-align:center;
-	line-height:1.05rem;
-	margin-top:0.65rem;
-	border-radius:3px;
-	position:relative;
-}
-.rese_information .room_info .replenish img{
-	position:absolute;
-	right:0;
-	bottom:0;
-	display:none;
-}
-.rese_information .room_info .more{
-	width:16.6rem;
-	height:1.05rem;
-	border:1px solid #e5e5e5;
-	border-radius:3px;
-	text-indent: 0.4rem;
-	font-size:16px;
-	color:#666;
-	outline:none;
-	margin-top:0.75rem;
-}
-.rese_information .room_info .font_c{
-	color:#f93402;
-	border-color:#f93402;
-}
-.rese_information .bord{
-	border-bottom:0px;
-	padding-bottom:0px;
-}
+.reserve{font-size:20px;color:#f93402;line-height:0.6rem;margin-top:0.75rem;}
+.rese_information{border:1px solid #cccccc;border-top:2px solid #f93402;padding:0.75rem;margin-top:0.3rem;}
+.rese_information .rese_info{font-size:16px;color:#333;}
+.rese_information .introduce{border:1px solid #e5e5e5;background:#fafafa;overflow:hidden;margin-top:0.75rem;border-radius:3px;}
+.rese_information .introduce div{text-align:center;font-size:16px;color:#000;line-height:1rem;}
+.rese_information .introduce .name{float:left;width:31%;}
+.rese_information .introduce .price{width:69%;float:right;}
+.rese_information .rese_name{padding:0.6rem 0.5rem;border-bottom:1px solid #e5e5e5;overflow:hidden;}
+.rese_information .rese_name .name{float:left;width:31%;}
+.rese_information .rese_name .name .pic{float:left;width:3.3rem;height:2.05rem;}
+.rese_information .rese_name .n.grog_prompt{width:28.7rem;border:1px solid red;font-size:14px;color:#f93402;line-height:0.45rem;padding: 0.25rem;margin-top:0.3rem;}
+.grogshop_list{clear:both;margin:0.5rem 0 0.25rem 0;overflow:hidden;border-bottom:1px solid #f0f0f0;padding-bottom:0.25rem;}
+.grogshop_list li{float:left;width:6.75rem;margin-right:0.75rem;margin-bottom: 0.5rem;}
+.grogshop_list li .grog_shop_img{width:100%;height:4.2rem;}
+.grogshop_list li .grog_shop_img img{width:100%;}
+.grogshop_list li .grog_name{font-size:18px;color:#000;line-height:0.6rem;margin:0.25rem 0 0.2rem 0;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.grogshop_list li .grog_site{font-size:14px;color:#666;}
+.grogshop_list li .grog_site span{font-size:14px;color:#666;}
+.grogshop_list li .grog_phone_num{line-height:0.75rem;}
+.grogshop_list li .grog_price{font-size:18px;color:#ff3300;line-height:0.75rem;}
+.grogshop_list li .grog_price span{font-size:0.6rem;color:#ff3300;}
+.grogshop_list li .grog_bazaar_price{font-size:14px;color:#666;line-height:0.75rem;}
+.grogshop_list li .grog_bazaar_price del{font-size:14px;color:#666;}
+.grogshop_list li .grog_comm{height:0.5rem;}
+.grogshop_list li .grog_comm img{width:0.45rem;height:0.45rem;vertical-align:top;}
+.loadMore {display: block;margin-top: 0.25rem;height: 1.125rem;background-color: #fafafa;font-size: 14px;color: #999999;line-height: 1.125rem;text-align: center;}
+.grogshop_list  .mar-r{margin-right:0;}
+.grog_footer{margin-top:0.25rem;}ame .pic img{width:100%;vertical-align:middle;}
+.rese_information .rese_name .name .site{float:left;margin-left:0.5rem;margin-top:0.3rem;}
+.rese_information .rese_name .name .site p{font-size:16px;color:#000;line-height:0.7rem;}
+.rese_information .rese_name .name .site .location{font-size:16px;color:#666;}
+.rese_information .rese_name .price{float:left;width:69%;text-align:center;font-size:16px;color:#000;line-height:2.05rem;}
+.rese_information .room_info{padding:0.6rem 0.5rem;border-bottom:1px solid #e5e5e5;overflow:hidden;}
+.rese_information .room_info .room{font-size:16px;color:#333333;}
+.rese_information .room_info .room span{font-size:14px;color:#666;font-weight:normal;}
+.rese_information .room_info .room_num{margin-top:0.5rem;}
+.rese_information .room_info .room_num span{font-size:16px;color:#333333;}
+.rese_information .room_info .room_num select{display:inline-block;width:5.75rem;height:1.1rem;font-size:16px;color:#666;border:1px solid #e5e5e5;text-indent: 0.2rem;line-height:1.1rem;border-radius:3px;}
+.rese_information .room_info .room_num .time{display:inline-block;border:1px solid #e5e5e5;width:5.75rem;height:1.05rem;vertical-align:middle;margin-top:0.25rem;line-height:0.9rem;border-radius:3px;}
+.rese_information .room_info .room_num .time input{width:4.7rem;height:1rem;font-size:16px;color:#666;text-indent: 0.3rem;vertical-align:middle;outline: none;}
+.rese_information .room_info .room_num .time img{vertical-align:middle;}
+.replenish_box{width:21.5rem;}
+.rese_information .room_info .replenish{height:1.05rem;width:4.3rem;border:1px solid #e5e5e5;float:left;margin-right:0.75rem;font-size:16px;color:#333;text-align:center;line-height:1.05rem;margin-top:0.65rem;border-radius:3px;position:relative;}
+.rese_information .room_info .replenish img{position:absolute;right:0;bottom:0;display:none;}
+.rese_information .room_info .more{width:16.6rem;height:1.05rem;border:1px solid #e5e5e5;border-radius:3px;text-indent: 0.4rem;font-size:16px;color:#666;outline:none;margin-top:0.75rem;}
+.rese_information .room_info .font_c{color:#f93402;border-color:#f93402;}
+.rese_information .bord{border-bottom:0px;padding-bottom:0px;}
 /*提交信息*/
-.res_sub{
-	float:right;
-	margin:0.25rem 0 0.75rem 0;
+.res_sub{float:right;margin:0.25rem 0 0.75rem 0;}
+.res_sub span{font-size:16px;color:#333;font-weight:bold;}
+.res_sub .sub{display:inline-block;width:4.375rem;height:1.1rem;background:#f93402;font-size:16px;color:#fff;text-align:center;line-height:1.05rem;border-radius:3px;margin-left:0.25rem;font-weight:normal;}
+.mar_l_a{margin-left:1.5rem;}
+.mar_l_b{margin-left:1.1rem;}
+.mar_l_c{margin-left:0.8rem;}
+.mar_l_d{margin-left:0.26rem;}
+.mar_l_e{margin-left:0.75rem;}
+.mar_l_f{margin-left:0.7rem;}
+@media screen and (min-width: 320px) and (max-width: 739px){
+	.grog_prompt{width:19.35rem;line-height:20px;}
+	.grogshop_list li{width:9.75rem;margin-right:0.5rem;}
+	.grogshop_list li:nth-of-type(even){margin-right: 0px;}/*偶数个*/
+	.grogshop_list li .grog_shop_img{width:100%;height:6.3rem;margin-bottom: 10px;}
+	.grogshop_list li .grog_site{line-height:20px;}
+	.grogshop_list li .grog_price{line-height:24px;font-size: 16px;}
+	.grogshop_list li .grog_name{font-size:16px;line-height: 24px;}
+	.loadMore {height: 34px;font-size: 14px;line-height: 34px;}
 }
-.res_sub span{
-	font-size:16px;
-	color:#333;
-	font-weight:bold;
+@media screen and (min-width: 740px) and (max-width: 1199px){
+	.grog_prompt{width:19.45rem;line-height:20px;}
+	.grogshop_list li{width:4.625rem;margin-right:0.5rem;}
+	.grogshop_list li .grog_shop_img{width:100%;height:3rem;margin-bottom: 10px;}
+	.grogshop_list li .grog_site{line-height:20px;}
+	.grogshop_list li .grog_price{line-height:24px;font-size: 16px;}
+	.grogshop_list li .grog_name{font-size:16px;line-height: 24px;}
+	.loadMore {height: 34px;font-size: 14px;line-height: 34px;}
 }
-.res_sub .sub{
-	display:inline-block;
-	width:4.375rem;
-	height:1.1rem;
-	background:#f93402;
-	font-size:16px;
-	color:#fff;
-	text-align:center;
-	line-height:1.05rem;
-	border-radius:3px;
-	margin-left:0.25rem;
-	font-weight:normal;
-}
-.mar_l_a{
-	margin-left:1.5rem;
-}
-.mar_l_b{
-	margin-left:1.1rem;
-}
-.mar_l_c{
-	margin-left:0.8rem;
-}
-.mar_l_d{
-	margin-left:0.26rem;
-}
-.mar_l_e{
-	margin-left:0.75rem;
-}
-.mar_l_f{
-	margin-left:0.7rem;
+@media screen and (min-width: 1200px){
+	.grog_prompt{width:28.7rem;line-height:0.45rem;}
+	.grogshop_list li{width:6.75rem;margin-right:0.75rem;}
+	.grogshop_list li .grog_shop_img{width:100%;height:4.2rem;}
+	.grogshop_list li .grog_price{font-size:14px;line-height:0.75rem;}
+	.grogshop_list li .grog_name{font-size:18px;line-height:0.6rem;}
+	.loadMore {height: 1.125rem;font-size: 14px;line-height: 1.125rem;}
 }

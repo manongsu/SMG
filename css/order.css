@@ -10,10 +10,9 @@ form .orderMessage{border: 1px solid #f0f0f0;border-top:none;padding: 0 0.75rem;
 .orderMessage li:last-child{border-bottom: none;}
 .orderMessage li .radio{display:block;float: left;margin:1.625rem 0.375rem;width: 18px;}
 .orderMessage li .goodsImg{display:block;float: left;height: 3.65rem;width:3.65rem;border: 1px solid #f0f0f0;margin-right: 0.6rem;}
-.orderMessage li h4{font-size: 16px;line-height: 20px;margin-bottom: 0.5rem;}
+.orderMessage li h4{font-size: 16px;line-height: 20px;margin-bottom: 0.5rem;float: left;width: 22rem;}
 .orderMessage li h4 span{float:right;font-size: 14px;line-height: 20px;font-weight: normal;}
 .orderMessage li p{float:left;width:80%;font-size: 14px;line-height: 14px;}
-.orderMessage li p{font-size: 14px;line-height: 14px;}
 .orderMessage li p.price{margin-bottom: 0.375rem;}
 .orderMessage li p.price span{font-weight: bold;}
 .orderMessage li p.norm{height: 0.8rem;margin-bottom:0.375rem;}
@@ -40,3 +39,9 @@ form .orderMessage{border: 1px solid #f0f0f0;border-top:none;padding: 0 0.75rem;
 .oldOrder table th:first-child{border-left: 1px solid #e5e5e5;border-radius: 3px 0 0 3px;}
 .oldOrder table th:last-child{border-right: 1px solid #e5e5e5;border-radius: 0 3px 3px 0;}
 .oldOrder table td{border-bottom: 1px dashed #ccc;line-height: 1.65rem;text-align:center;}
+@media screen and (min-width: 320px) and (max-width: 739px){
+    .orderTitle{font-size: 16px;line-height:36px;}
+    .orderMessage label{width:5rem;height:34px;font-size: 14px;line-height: 34px;}
+    .orderMessage input{width:11.98rem;height:32px;margin-bottom: 10px;}
+    .orderMessage input.long{width:17rem;height:32px;}
+}
