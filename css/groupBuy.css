@@ -11,11 +11,12 @@
 .tab li:hover a{color: #f93402;}
 .tab li:hover i{display: block;}
 .goodsList ul{overflow: hidden;padding-top:0.625rem;border-top: 1px solid #e5e5e5;}
-.goodsList li{width: 6.25rem;height:5.35rem;float:left;margin-right: 0.625rem;margin-bottom: 0.625rem;background-color: #fff;}
+.goodsList li{width: 6.25rem;height:6.275rem;float:left;margin-right: 0.625rem;margin-bottom: 0.625rem;background-color: #fff;}
 .goodsList li.right{margin-right: 0;}
 .goodsList li>a{font-size: 0;display: block;}
 .goodsList li>a>img{width:100%;height: 3.9rem;}
-.goodsList li .name{font-size: 18px;line-height:18px;margin:0.35rem 0;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.goodsList li .name{font-size: 18px;line-height:18px;margin:0.375rem 0 0.25rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.goodsList li .price{font-size: 18px;line-height:18px;margin:0 0 0.375rem;font-size: 14px;color: #999;}
 .goodsList li .des{font-size: 0;}
 .goodsList li .des img{float: left;margin-right: 7px;}
 .goodsList li .des span{font-size: 14px;line-height: 14px;color: #999;}
@@ -101,15 +102,9 @@ button.buy{width: 3rem;height: 1rem;color:#fff;margin: 0.5rem 8.5rem;border-radi
 .top1 .label{position: absolute;top:0;left:0.25rem;font-size: 0;width: 56px;height: 26px;}
 .top1 .label img{position: absolute;top:0;left:0;width: 100%;height: 100%;}
 .top1 .label p{position: absolute;top:0;left:0;width:100%;height:20px;color: #fff;text-align: center;line-height: 20px;font-size: 12px;}
-.leaderNewsList li{height: 2rem;margin-top: 0.5rem;overflow: hidden;}
-.leaderNewsList li .news_img{float: left;width: 3.2rem;height: 100%;margin-right:0.375rem;position: relative;}
-.leaderNewsList li .news_img>img{width:100%;height: 100%;}
-.leaderNewsList .label{position: absolute;top:0;left:0.25rem;font-size: 0;width: 30px;height: 24px;}
-.leaderNewsList .label img{position: absolute;top:0;left:0;width: 100%;height: 100%;}
-.leaderNewsList .label p{position: absolute;top:0;left:0;width:100%;color: #fff;text-align: center;font-size: 12px;line-height: 18px;}
-.leaderNewsList li h5{font-size: 14px;font-weight: normal;line-height:18px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;margin-bottom: 14px;}
-.leaderNewsList li p{color: #999;font-size: 14px;float: left;}
-.leaderNewsList li p img{float: left;width: 14px;height: 14px;margin-right: 6px;}
+.leaderNewsList li{margin-top: 0.5rem;overflow: hidden;}
+.leaderNewsList li h5{font-size: 14px;font-weight: normal;line-height:18px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;}
+.leaderNewsList li p{color: #999;font-size: 14px;float: left;font-weight: bold;margin-right: 6px;}
 /*wonderfulVideo*/
 .wonderfulVideo{margin-top: 0.5rem;}
 .wonderfulVideo h4{font-size: 16px;}

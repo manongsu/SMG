@@ -1,13 +1,24 @@
+body{background-color:#f9f9f9;}
 .brand{float: left;width: 20rem;}
 .main_right{margin-top: -0.75rem;}
 /*-------------------------------left-------------------------------*/
-.videoBanner{height: 14.75rem;margin-top: 0.5rem;border-bottom: 1px solid #e5e5e5;}
-.videoBanner video{width:100%;height: 12rem;background-color: #000;margin-bottom: 0.75rem;}
-.videoBanner h3{font-size:26px;line-height:26px;margin-bottom: 0.4rem;}
-.videoBanner p{font-size:14px;line-height:14px;color: #999;}
-.message{margin-top:1.25rem;height: 590px;border: 1px solid #ccc;border-top: 0;}
-.message h2{line-height: 50px;text-align: center;border-top: 2px solid #f93402;border-bottom: 1px solid #d8d8d8;font-size: 16px;}
-.message .messageList{height: 484px;border-bottom: 1px solid #d8d8d8;overflow-y: auto;}
+.live{max-width: 1540px;padding:0 30px;margin: 0.25rem auto 0;}
+.videoWrap{float: left;font-size: 0;}
+.videoWrap .liveTitle{height: 86px;background-color: #fff;margin-bottom: 10px;}
+.videoWrap .liveTitle img{width:56px;height: 56px;margin:15px;float: left;}
+.videoWrap .liveTitle h3{float: left;width:50%;font-size: 26px;line-height: 26px;margin:15px 0 16px;}
+.videoWrap .liveTitle p{float: left;width:50%;font-size: 14px;line-height: 14px;color: #999;}
+.videoWrap video{width: 100%;background-color: #000;}
+
+.gift{height: 66px;background-color: #fff;}
+.gift ul{float: right;overflow: hidden;}
+ .gift ul li{float: left;width: 44px;height: 44px;border: 1px solid #e3e3e3;margin: 10px 10px 10px 0;text-align: center;line-height: 44px;}
+ .gift ul li img{vertical-align: middle;}
+
+
+.message{float:right;border: 1px solid #ccc;border-top: 0;}
+.message h2{line-height: 50px;text-align: center;border-top: 2px solid #f93402;border-bottom: 1px solid #d8d8d8;font-size: 16px;background-color: #FFF;}
+.message .messageList{border-bottom: 1px solid #d8d8d8;overflow-y: auto;background-color: #FFF;}
 .messageList li{width: 100%;overflow: hidden;}
 .messageList li.left img{height: 32px;height: 32px;float: left;margin-top: 10px;margin-left: 10px;}
 .messageList li.left .name{float: left;margin-top: 10px;margin-left: 10px;line-height: 32px;font-size: 14px;}

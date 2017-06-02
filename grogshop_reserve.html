@@ -9,7 +9,6 @@
     <meta name="Keywords" content=""/>
     <meta name="Description" content=""/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/tableList.css"/>
     <link rel="stylesheet" href="css/media.css"/>
      <link rel="stylesheet" href="css/public.css"/>
     <!--[if lt IE 9]>
@@ -105,12 +104,11 @@
 			<h3 class="room">房间信息</h3>
 			<div class="room_num">
 				<span>房间数量 :</span>
-				<select name="" id="">
+				<select name="">
 					<option value="">请选择房间数量</option>
 				</select>
-				
-				<span class="mar_l_a">房型 :</span>
-				<select name="" id="">
+				<span>房型 :</span>
+				<select name="">
 					<option value="">请选择房型</option>
 				</select>
 			</div>
@@ -120,13 +118,13 @@
 		<div class="room_info">
 			<h3 class="room">入住时间</h3>
 			<div class="room_num">
-				<span class="mar_l_c">入住 :</span>
+				<span>入住 :</span>
 				<div class="time">
 					<input type="text" placeholder="2017-05-20"/>
 					<img src="images/time.png" alt="" />
 				</div>
 				
-				<span class="mar_l_a">离店 :</span>
+				<span>离店 :</span>
 				<div class="time">
 					<input type="text" placeholder="2017-05-20"/>
 					<img src="images/time.png" alt="" />
@@ -138,59 +136,63 @@
 		<div class="room_info">
 			<h3 class="room">入住人<span>（请务必保证所提供姓、名与入住时所持证件上完全相同）</span></h3>
 			<div class="room_num">
-				<span class="mar_l_c">姓名 :</span>
+				<span>姓名 :</span>
 				<div class="time">
 					<input type="text" placeholder="2017-05-20"/>
 				</div>
 				
-				<span class="mar_l_b">证件号 :</span>
+				<span>证件号 :</span>
 				<div class="time">
 					<input type="text" placeholder="2017-05-20"/>
 				</div>
 			</div>
 		</div>
-		
 			<!--联系人信息-->
 		<div class="room_info">
 			<h3 class="room">联系人信息</h3>
 			<div class="room_num">
-				<span class="mar_l_d">*联系人 :</span>
-				<div class="time">
-					<input type="text" placeholder="2017-05-20"/>
+				<div style="float: left;margin-bottom:0.375rem;">
+					<span>*联系人 :</span>
+					<div class="time">
+						<input type="text" placeholder="2017-05-20"/>
+					</div>
 				</div>
-				
-				<span class="mar_l_b">证件号 :</span>
-				<div class="time">
-					<input type="text" placeholder="2017-05-20"/>
+				<div style="float: left;margin-bottom:0.375rem;">
+					<span>证件号 :</span>
+					<div class="time">
+						<input type="text" placeholder="2017-05-20"/>
+					</div>
 				</div>
-				
-				<span class="mar_l_a">部门 :</span>
-				<select name="" id="">
-					<option value="">请填写您的部门</option>
-				</select>
-				<div style="margin-top:0.5rem">
+				<div style="float: left;margin-bottom:0.375rem;">
+					<span>部门 :</span>
+					<select name="">
+						<option value="">请填写您的部门</option>
+					</select>
+				</div>
+				<div style="float: left;margin-bottom:0.375rem;">
 					<span >确认方式 :</span>
-					<select name="" id="">
+					<select name="">
 						<option value="">传真电话确认</option>
 					</select>
-					
-					<span class="mar_l_e">传真电话 :</span>
+				</div>
+				<div style="float: left;margin-bottom:0.375rem;">
+					<span>传真电话 :</span>
 					<div class="time">
 						<input type="text" placeholder="请填写您的传真电话"/>
 					</div>
-					
-					<span class="mar_l_f">联系方式 :</span>
+				</div>
+				<div style="float: left;margin-bottom:0.375rem;">
+					<span>联系方式 :</span>
 					<div class="time">
 						<input type="text" placeholder="请填写您的手机号(长号)"/>
 					</div>
 				</div>
-				<div style="margin-top:0.5rem">
+				<div style="float: left;">
 					<span class="mar_l_d">E-mail：</span>
 					<div class="time">
 						<input type="text" placeholder="请填写您的E-mail："/>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 		
