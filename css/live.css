@@ -12,8 +12,8 @@ body{background-color:#f9f9f9;}
 
 .gift{height: 66px;background-color: #fff;}
 .gift ul{float: right;overflow: hidden;}
- .gift ul li{float: left;width: 44px;height: 44px;border: 1px solid #e3e3e3;margin: 10px 10px 10px 0;text-align: center;line-height: 44px;}
- .gift ul li img{vertical-align: middle;}
+.gift ul li{float: left;width: 44px;height: 44px;border: 1px solid #e3e3e3;margin: 10px 10px 10px 0;text-align: center;line-height: 44px;}
+.gift ul li img{vertical-align: middle;}
 
 
 .message{float:right;border: 1px solid #ccc;border-top: 0;}
@@ -30,3 +30,16 @@ body{background-color:#f9f9f9;}
 .message form input{float:left;width:181px;height: 30px;margin: 10px;background-color: #fff;border: 1px solid #cccccc;border-radius: 3px;padding: 0 10px;}
 .message form img{float:left;margin-top: 13px;font-size: 0;}
 .message form button{float:right;width: 68px;height: 32px;color: #fff;border-radius: 3px;margin: 10px;}
+
+
+@media screen and (min-width: 320px) and (max-width: 739px){
+ .live{padding:0;}
+ .videoWrap{width: 100%;}
+ .message{width: 100%;}
+}
+@media screen and (min-width: 740px) and (max-width: 1199px){
+
+}
+@media screen and (min-width: 1200px){
+
+}

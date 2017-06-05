@@ -78,7 +78,7 @@
 <div class="live">
     <div class="brand" style="margin-bottom: 0.5rem;"><a href="index.html">首页</a> > <a href="newsList1.html">新闻</a> > <a class="mainC" href="live.html">直播</a></div>
     <div class="videoWrap">
-        <div class="liveTitle">
+        <div class="liveTitle hidden">
             <img src="images/waterFall1.png" alt="">
             <h3>我在帅帅的直播啊</h3>
             <p>涛涛的直播间</p>
@@ -147,17 +147,23 @@
 <!--video-->
 <script type="text/javascript">
     function video() {
-        var totalWidth = $(".live").width();
-        $(".videoWrap").css({
-            "width":totalWidth-370+"px",
-            "height":(totalWidth-370)*0.75+"px",
-        });
-        $(".videoWrap video").css({
-            "height":$(".videoWrap").height()-86-66-10+"px",
-        })
-        $(".messageList").css({
-            "height":$(".videoWrap").height()-107.5+"px",
-        })
+        if($(window).width>=1200){
+            var totalWidth = $(".live").width();
+            $(".videoWrap").css({
+                "width":totalWidth-370+"px",
+                "height":(totalWidth-370)*0.75+"px",
+            });
+            $(".videoWrap video").css({
+                "height":$(".videoWrap").height()-86-66-10+"px",
+            })
+            $(".messageList").css({
+                "height":$(".videoWrap").height()-107.5+"px",
+            })
+        }else{
+            $(".videoWrap video").css({
+                "height":$(".videoWrap").width()/16*9+"px",
+            });
+        }
     }
     $(function () {
         video();

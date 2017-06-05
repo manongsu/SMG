@@ -520,10 +520,82 @@
                         上月部门发表量
                         <img src="images/angel_top.png" alt="">
                     </li>
-                    <li>上月点击排行榜</li>
+                    <li>上月点击排行榜<img src="images/angel_top.png" alt=""></li>
                 </ul>
             </h4>
             <ul class="publishNum">
+                <li>
+                    <a href="">
+                        <div class="label"><img src="images/01.png" alt=""><p>01</p></div>
+                        <span>番茄网</span>
+                        <span class="percent">20.05%</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="label"><img src="images/02.png" alt=""><p>02</p></div>
+                        <span>办公室</span>
+                        <span class="percent">20.05%</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="label"><img src="images/03.png" alt=""><p>03</p></div>
+                        <span>总编室</span>
+                        <span class="percent">20.05%</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="label"><img src="images/04.png" alt=""><p>04</p></div>
+                        <span>人力资源部</span>
+                        <span class="percent">20.05%</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="label"><img src="images/04.png" alt=""><p>05</p></div>
+                        <span>第一财经</span>
+                        <span class="percent">20.05%</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="label"><img src="images/04.png" alt=""><p>06</p></div>
+                        <span>溶酶体中心</span>
+                        <span class="percent">20.05%</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="label"><img src="images/04.png" alt=""><p>07</p></div>
+                        <span>东方卫视中心</span>
+                        <span class="percent">20.05%</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="label"><img src="images/04.png" alt=""><p>08</p></div>
+                        <span>技术运营中心</span>
+                        <span class="percent">20.05%</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="label"><img src="images/04.png" alt=""><p>09</p></div>
+                        <span>技术管理部</span>
+                        <span class="percent">20.05%</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="label"><img src="images/04.png" alt=""><p>10</p></div>
+                        <span>工会</span>
+                        <span class="percent">20.05%</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="publishNum" style="display: none;">
                 <li>
                     <a href="">
                         <div class="label"><img src="images/01.png" alt=""><p>01</p></div>
@@ -642,6 +714,13 @@
             $(".phone_search").css("display","block");
             $("body").css("overflow","hidden");
         }) ;
+    });
+</script>
+<!--排行榜-->
+<script type="text/javascript">
+    $(".publish h4 li").click(function () {
+        $(this).addClass("active").siblings("li").removeClass("active");
+        $(".publishNum").toggle();
     });
 </script>
 <!--[if lt IE 9]>

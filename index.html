@@ -1077,6 +1077,60 @@
                     </a>
                 </li>
             </ul>
+            <ul style="display: none;">
+                <li>
+                    <a href="">
+                        <img src="images/goods1.png" alt="">
+                        <h5>狮峰牌西湖龙井狮峰牌西湖龙井狮峰牌西湖龙井</h5>
+                        <p class="now_price">番茄价:<span class="mainC" style="font-size: 14px;">￥</span><span class="mainC" style="font-size: 18px;font-weight: bold;">200元</span></p>
+                        <p class="old_price">原价:￥480元</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/goods2.png" alt="">
+                        <h5>狮峰牌西湖龙井狮峰牌西湖龙井狮峰牌西湖龙井</h5>
+                        <p class="now_price">番茄价:<span class="mainC" style="font-size: 14px;">￥</span><span class="mainC" style="font-size: 18px;font-weight: bold;">200元</span></p>
+                        <p class="old_price">原价:￥480元</p>
+                    </a>
+                </li>
+            </ul>
+            <ul style="display: none;">
+                <li>
+                    <a href="">
+                        <img src="images/goods1.png" alt="">
+                        <h5>狮峰牌西湖龙井狮峰牌西湖龙井狮峰牌西湖龙井</h5>
+                        <p class="now_price">番茄价:<span class="mainC" style="font-size: 14px;">￥</span><span class="mainC" style="font-size: 18px;font-weight: bold;">200元</span></p>
+                        <p class="old_price">原价:￥480元</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/goods2.png" alt="">
+                        <h5>狮峰牌西湖龙井狮峰牌西湖龙井狮峰牌西湖龙井</h5>
+                        <p class="now_price">番茄价:<span class="mainC" style="font-size: 14px;">￥</span><span class="mainC" style="font-size: 18px;font-weight: bold;">200元</span></p>
+                        <p class="old_price">原价:￥480元</p>
+                    </a>
+                </li>
+            </ul>
+            <ul style="display: none;">
+                <li>
+                    <a href="">
+                        <img src="images/goods1.png" alt="">
+                        <h5>狮峰牌西湖龙井狮峰牌西湖龙井狮峰牌西湖龙井</h5>
+                        <p class="now_price">番茄价:<span class="mainC" style="font-size: 14px;">￥</span><span class="mainC" style="font-size: 18px;font-weight: bold;">200元</span></p>
+                        <p class="old_price">原价:￥480元</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/goods2.png" alt="">
+                        <h5>狮峰牌西湖龙井狮峰牌西湖龙井狮峰牌西湖龙井</h5>
+                        <p class="now_price">番茄价:<span class="mainC" style="font-size: 14px;">￥</span><span class="mainC" style="font-size: 18px;font-weight: bold;">200元</span></p>
+                        <p class="old_price">原价:￥480元</p>
+                    </a>
+                </li>
+            </ul>
             <a class="more mainC borderR" href="groupBuy.html">查看更多</a>
         </div>
         <!--优惠-->
@@ -1213,11 +1267,15 @@
         }) ;
     });
 </script>
-<!--关闭广告条-->
+<!--关闭广告条--><!--团购-->
 <script type="text/javascript">
     $(".adClose").click(function () {
         $(".ad").css("display","none");
         $(".ad").parent().css("padding-top","0.5rem");
+    });
+    $(".groupBuy h4 span").click(function () {
+       $(this).addClass("active").siblings("span").removeClass("active");
+       $(".groupBuy ul").eq($(this).index()).css("display","block").siblings("ul").css("display","none");
     });
 </script>
 <!--响应式的JS处理-->

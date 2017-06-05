@@ -85,6 +85,13 @@ article p{font-size: 16px;}
 .commentList .commentArticle .inputWrap img{float:left;width: 0.4rem;height: 0.4rem;margin: 0.2225rem 0.25rem 0.2225rem 0;}
 .commentList .commentArticle .inputWrap input{float:left;height: 0.85rem;}
 .newsList h2{height: 1.3rem;line-height: 1.3rem;border-top: 2px solid #f93402;border-bottom: 1px solid #e5e5e5;font-size: 16px;}
+/*手机端评论*/
+.mCommentList{width: 100%; height: 100%;background-color: #f0f0f0; position: fixed;top:0;left:0;z-index:999;display: none;}
+.mCommentList .mTitle{border-bottom: 1px solid #999;height: 54px;padding: 0 15px;}
+.mCommentList .mTitle button{padding:10px;font-size: 14px;line-height: 14px;margin-top: 10px;border-radius: 3px;}
+.mCommentList .mTitle button.submit{float: right;}
+.mCommentList textarea{width: 100%;height: 220px;}
+
 @media screen and (min-width: 320px) and (max-width: 739px){
     .media_list a h3{height:36px;font-size: 16px;line-height: 18px;}
     .media_list p.des span{font-size: 12px;}

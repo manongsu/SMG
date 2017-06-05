@@ -102,7 +102,7 @@
         <!--发表评论-->
         <div class="writeComment">
             <h3>发表评论<p>（现有<span>7</span>人对本文进行了评论）</p></h3>
-            <form action="">
+            <form action="" class="hidden">
                 <div class="top">
                     <div style="float: left;"><label>昵称：</label><input type="text"/><span>(昵称最长为19个中文字符)</span></div>
                     <div style="float: right;"><label>上传文件</label><a href=""></a><span>(昵称最长为19个中文字符)</span></div>
@@ -148,7 +148,7 @@
                             </p>
                         </li>
                     </ul>
-                    <div class="inputWrap">
+                    <div class="inputWrap hidden">
                         <img src="images/edit.png" alt="">
                         <input class="" type="text" placeholder="我也说一句"/>
                     </div>
@@ -166,7 +166,7 @@
                         <span class="line"></span>
                         <span class="mainC btnShowComment" flag="0"><span class="mainC">展开</span>回复(0)</span>
                     </p>
-                    <div class="inputWrap">
+                    <div class="inputWrap hidden">
                         <img src="images/edit.png" alt="">
                         <input class="" type="text" placeholder="我也说一句"/>
                     </div>
@@ -184,7 +184,7 @@
                         <span class="line"></span>
                         <span class="mainC btnShowComment" flag="0"><span class="mainC">展开</span>回复(0)</span>
                     </p>
-                    <div class="inputWrap">
+                    <div class="inputWrap hidden">
                         <img src="images/edit.png" alt="">
                         <input class="" type="text" placeholder="我也说一句"/>
                     </div>
@@ -209,7 +209,7 @@
                         <span class="line"></span>
                         <span class="mainC btnShowComment" flag="0"><span class="mainC">展开</span>回复(0)</span>
                     </p>
-                    <div class="inputWrap">
+                    <div class="inputWrap hidden">
                         <img src="images/edit.png" alt="">
                         <input class="" type="text" placeholder="我也说一句"/>
                     </div>
@@ -493,6 +493,16 @@
     <p style="margin-top: 10px;">Copyright &copy; 番茄网网 沪ICP备1234568号-1  沪公网安备 110101088888888号   </p>
 </footer>
 <div id="mask" style="width: 100%;height: 100%;background-color: rgba(0,0,0,.5);position: absolute;top:0;left:0;display: none;z-index: 100;"></div>
+<div class="mCommentList">
+    <form action="">
+        <div class="mTitle">
+            <button type="button" class="cancel">取消</button>
+            <button class="submit">提交</button>
+        </div>
+        <div style="padding: 15px;background-color: #fff;"><textarea name="" placeholder="说说你的看法"></textarea></div>
+
+    </form>
+</div>
 <script type="text/javascript" src="js/jquery.1.9.1.js"></script>
 <script type="text/javascript" src="js/banner.js"></script>
 <!--bannerJS-->
@@ -552,6 +562,16 @@
                 $(this).children("span").html("收起");
             }
         });
+    });
+</script>
+<script type="text/javascript">
+    $(".commentComment .btn_group").click(function () {
+        if($(window).width()<1200){
+            $(".mCommentList").addClass("show");
+        }
+    });
+    $(".cancel").click(function () {
+        $(".mCommentList").removeClass("show");
     });
 </script>
 <!--[if lt IE 9]>
