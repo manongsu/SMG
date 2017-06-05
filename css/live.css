@@ -9,7 +9,10 @@ body{background-color:#f9f9f9;}
 .videoWrap .liveTitle h3{float: left;width:50%;font-size: 26px;line-height: 26px;margin:15px 0 16px;}
 .videoWrap .liveTitle p{float: left;width:50%;font-size: 14px;line-height: 14px;color: #999;}
 .videoWrap video{width: 100%;background-color: #000;}
-
+.liveTitle2{height: 86px;background-color: #fff;margin-bottom: 10px;display: none;}
+.liveTitle2 img{width:56px;height: 56px;margin:15px;float: left;}
+.liveTitle2 h3{float: left;width:50%;font-size: 26px;line-height: 26px;margin:15px 0 16px;}
+.liveTitle2 p{float: left;width:50%;font-size: 14px;line-height: 14px;color: #999;}
 .gift{height: 66px;background-color: #fff;}
 .gift ul{float: right;overflow: hidden;}
 .gift ul li{float: left;width: 44px;height: 44px;border: 1px solid #e3e3e3;margin: 10px 10px 10px 0;text-align: center;line-height: 44px;}
@@ -19,7 +22,7 @@ body{background-color:#f9f9f9;}
 .message{float:right;border: 1px solid #ccc;border-top: 0;}
 .message h2{line-height: 50px;text-align: center;border-top: 2px solid #f93402;border-bottom: 1px solid #d8d8d8;font-size: 16px;background-color: #FFF;}
 .message .messageList{border-bottom: 1px solid #d8d8d8;overflow-y: auto;background-color: #FFF;}
-.messageList li{width: 100%;overflow: hidden;}
+.messageList li{width: 100%;overflow: hidden;margin-bottom: 10px;}
 .messageList li.left img{height: 32px;height: 32px;float: left;margin-top: 10px;margin-left: 10px;}
 .messageList li.left .name{float: left;margin-top: 10px;margin-left: 10px;line-height: 32px;font-size: 14px;}
 .messageList li.left .content{float:left;padding:10px 15px;max-width:192px;background-color:#f7f7f7;border-radius:0 8px 8px 8px;font-size: 14px;margin-left:52px;}
@@ -27,19 +30,21 @@ body{background-color:#f9f9f9;}
 .messageList li.right .name{float: right;margin-top: 10px;margin-right: 10px;line-height: 32px;font-size: 14px;}
 .messageList li.right .content{float:right;padding:10px 15px;max-width:192px;background-color:#53b8ff;border-radius:8px 0 8px 8px;font-size: 14px;margin-right:52px;}
 .message form{height: 52px;background-color: #fafafa;font-size: 0;}
-.message form input{float:left;width:181px;height: 30px;margin: 10px;background-color: #fff;border: 1px solid #cccccc;border-radius: 3px;padding: 0 10px;}
+.message form input{float:left;width:50%;height: 30px;margin: 10px;background-color: #fff;border: 1px solid #cccccc;border-radius: 3px;padding: 0 10px;}
 .message form img{float:left;margin-top: 13px;font-size: 0;}
 .message form button{float:right;width: 68px;height: 32px;color: #fff;border-radius: 3px;margin: 10px;}
 
 
 @media screen and (min-width: 320px) and (max-width: 739px){
+ .live{padding:0;margin: 0;}
+ .videoWrap{width: 100%;}
+ .message{width: 100%;}
+ .liveTitle2{height: 78px;}
+ .liveTitle2 img{width:48px;height: 48px;}
+ .liveTitle2 h3{font-size: 18px;line-height: 18px;}
+}
+@media screen and (min-width: 740px) and (max-width: 1199px){
  .live{padding:0;}
  .videoWrap{width: 100%;}
  .message{width: 100%;}
-}
-@media screen and (min-width: 740px) and (max-width: 1199px){
-
-}
-@media screen and (min-width: 1200px){
-
 }

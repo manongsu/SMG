@@ -16,11 +16,12 @@
     <script src="js/html5shiv.min.js"></script>
     <script src="js/videoControl.js"></script>
     <script src="js/html5media.min.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
 <!--------------header---------------->
-<header>
+<header class="hidden">
     <div class="container">
         <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
         <nav class="menu hidden">
@@ -49,14 +50,14 @@
         <li class="btn_menu"><img src="images/menu_phone.png" alt=""/></li>
     </ul>
 </header>
-<div class="phone_search">
+<div class="phone_search hidden">
     <form action="">
         <input type="text" placeholder="搜索"/>
         <button type="button" class="close" style="border-left: 1px solid #dadada;">X</button>
         <button type="submit"><img src="images/search_phone.png" alt=""/></button>
     </form>
 </div>
-<nav class="phoneMenu">
+<nav class="phoneMenu hidden">
     <ul class="user">
         <li><a href=""><img src="images/user_phone.png" alt=""/><p>登录</p></a></li>
         <li><a href=""><img src="images/phone_phone.png" alt=""/><p>客户端</p></a></li>
@@ -76,7 +77,7 @@
 <!--------------主体内容---------------->
 
 <div class="live">
-    <div class="brand" style="margin-bottom: 0.5rem;"><a href="index.html">首页</a> > <a href="newsList1.html">新闻</a> > <a class="mainC" href="live.html">直播</a></div>
+    <div class="brand hidden" style="margin-bottom: 0.5rem;"><a href="index.html">首页</a> > <a href="newsList1.html">新闻</a> > <a class="mainC" href="live.html">直播</a></div>
     <div class="videoWrap">
         <div class="liveTitle hidden">
             <img src="images/waterFall1.png" alt="">
@@ -84,7 +85,12 @@
             <p>涛涛的直播间</p>
         </div>
         <video src="movie.mp4" class="movie"></video>
-        <div class="gift">
+        <div class="liveTitle2 show">
+            <img src="images/waterFall1.png" alt="">
+            <h3>我在帅帅的直播啊</h3>
+            <p>涛涛的直播间</p>
+        </div>
+        <div class="gift hidden">
             <ul>
                 <li><img src="images/live1.png" alt=""></li>
                 <li><img src="images/live2.png" alt=""></li>
@@ -94,14 +100,14 @@
         </div>
     </div>
     <div class="message">
-        <h2 class="mainC">留言区</h2>
+        <h2 class="mainC hidden" style="">留言区</h2>
         <ul class="messageList">
-            <li class="left"><img src="images/longevityList.png" alt=""/><p class="name mainC">我爱番茄网</p><br/><p class="content">我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网</p></li>
-            <li class="right"><img src="images/longevityList.png" alt=""/><p class="name mainC">我爱番茄网</p><br/><p class="content">我爱番茄网</p></li>
-            <li class="left"><img src="images/longevityList.png" alt=""/><p class="name mainC">我爱番茄网</p><br/><p class="content">我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网</p></li>
-            <li class="right"><img src="images/longevityList.png" alt=""/><p class="name mainC">我爱番茄网</p><br/><p class="content">我爱番茄网</p></li>
-            <li class="left"><img src="images/longevityList.png" alt=""/><p class="name mainC">我爱番茄网</p><br/><p class="content">我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网</p></li>
-            <li class="right"><img src="images/longevityList.png" alt=""/><p class="name mainC">我爱番茄网</p><br/><p class="content">我爱番茄网</p></li>
+            <li class="left"><img src="images/longevityList.png" alt=""/><p class="name mainC">我爱番茄网</p><div style="width: 100%;height: 1px;float: left;"></div><p class="content">我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网</p></li>
+            <li class="right"><img src="images/longevityList.png" alt=""/><p class="name mainC">我爱番茄网</p><div style="width: 100%;height: 1px;float: left;"></div><p class="content">我爱番茄网</p></li>
+            <li class="left"><img src="images/longevityList.png" alt=""/><p class="name mainC">我爱番茄网</p><div style="width: 100%;height: 1px;float: left;"></div><p class="content">我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网</p></li>
+            <li class="right"><img src="images/longevityList.png" alt=""/><p class="name mainC">我爱番茄网</p><div style="width: 100%;height: 1px;float: left;"></div><p class="content">我爱番茄网</p></li>
+            <li class="left"><img src="images/longevityList.png" alt=""/><p class="name mainC">我爱番茄网</p><div style="width: 100%;height: 1px;float: left;"></div><p class="content">我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网我爱番茄网</p></li>
+            <li class="right"><img src="images/longevityList.png" alt=""/><p class="name mainC">我爱番茄网</p><div style="width: 100%;height: 1px;float: left;"></div><p class="content">我爱番茄网</p></li>
         </ul>
         <form action="">
             <input type="text" placeholder="请输入评论，不超过16个字符"/>
@@ -111,7 +117,7 @@
     </div>
     <div style="clear:both;"></div>
 </div>
-<footer style="">
+<footer class="hidden">
     <p><a href="">设为首页 | </a><a href="">MG统一门户 | </a><a href="">办公用品采购系统 | </a><a href="">新华社  | </a><a href="">公文系统 | </a><a href="">外事管理系统 | </a><a href="">串联单查询 | </a><a href="">管理信息平台</a></p>
     <p style="margin-top: 10px;">Copyright &copy; 番茄网网 沪ICP备1234568号-1  沪公网安备 110101088888888号   </p>
 </footer>
@@ -147,7 +153,7 @@
 <!--video-->
 <script type="text/javascript">
     function video() {
-        if($(window).width>=1200){
+        if($(window).width()>=1200){
             var totalWidth = $(".live").width();
             $(".videoWrap").css({
                 "width":totalWidth-370+"px",
@@ -163,6 +169,9 @@
             $(".videoWrap video").css({
                 "height":$(".videoWrap").width()/16*9+"px",
             });
+            $(".messageList").css({
+                "height":$(window).height()-$(".videoWrap video").height()-88-55+"px",
+            })
         }
     }
     $(function () {

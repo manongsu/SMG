@@ -11,7 +11,8 @@
 .tab li:hover i{display: block;}
 /*寿星列表*/
 .longevityList{padding: 0 0.75rem;}
-.longevityList h3{font-size:16px;line-height:16px;text-align:center;margin: 0.75rem 0;}
+.longevityList h3{font-size:16px;line-height:16px;text-align:center;font-weight:normal;margin: 0.75rem 0;}
+.longevityList h3 span{font-size:24px;}
 .longevityList ul{overflow: hidden;}
 .longevityList ul li{width: 3.053333rem;text-align: center;float: left;font-size: 0;margin-bottom:0.75rem;}
 .longevityList ul li p{font-size: 16px;line-height:16px;margin: 0.25rem 0 0.5rem;}
