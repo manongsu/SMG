@@ -30,6 +30,7 @@ article .time,article .from,article .viewNum{float:left;color: #999;font-size: 1
 article .time img,article .from img,article .viewNum img{height: 14px;float: left;margin-right: 5px;}
 article .time{margin-right:0.25rem;}
 article .viewNum{float: right;}
+article>img{width: 100%;}
 article p{font-size: 16px;}
 button.buy{width: 3rem;height: 1rem;color:#fff;margin: 0.5rem 8.5rem;border-radius: 5px;}
 /*发表评论*/

@@ -77,12 +77,13 @@
 	.grogshop_list li .grog_price{line-height:24px;font-size: 16px;}
 	.grogshop_list li .grog_name{font-size:16px;line-height: 24px;}
 	.loadMore {height: 34px;font-size: 14px;line-height: 34px;}
-
 	.reserve{font-size:16px;color:#f93402;line-height:36px;}
 	.rese_information .room_info .room_num span{width:5rem;font-size:14px;line-height: 34px;}
 	.rese_information .room_info .room_num select{width:11rem;height:34px;font-size:14px;}
 	.rese_information .room_info .room_num .time{width:11rem;height:34px;font-size:14px;}
 	.rese_information .room_info .room_num .time input{width:9.7rem;height:34px;font-size:14px;}
+	.replenish_box{width:18rem;overflow: hidden;}
+	.rese_information .room_info .replenish{height:34px;width:auto;font-size:14px;color:#333;line-height:34px;padding: 0 5px;}
 }
 @media screen and (min-width: 740px) and (max-width: 1199px){
 	.grog_prompt{width:19.45rem;line-height:20px;}
