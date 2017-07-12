@@ -1,5 +1,5 @@
 /*--------------------------------left-----------------------*/
-.tab{width: 100%;height:20px;padding: 20px 0;overflow: auto;margin-top: 0.25rem;border-bottom: 1px solid #e5e5e5;}
+.tab{width: 100%;height:20px;padding: 20px 0;overflow: auto;margin-top: 0.25rem;}
 .tab ul{float:left;height: 20px;margin-right:-999em;}
 .tab li{float:left;height: 20px;position: relative;line-height: 20px;}
 .tab li a{display: block;height: 100%;padding: 0 20px;border-right: 1px solid #ddd;font-size: 16px;}
@@ -10,51 +10,73 @@
 .tab li:hover a{color: #f93402;}
 .tab li:hover i{display: block;}
 /*寿星列表*/
-.longevityList{padding: 0 0.75rem;}
+.longevityList{}
 .longevityList h3{font-size:16px;line-height:16px;text-align:center;font-weight:normal;margin: 0.75rem 0;}
 .longevityList h3 span{font-size:24px;}
 .longevityList ul{overflow: hidden;}
-.longevityList ul li{width: 3.053333rem;text-align: center;float: left;font-size: 0;margin-bottom:0.75rem;}
-.longevityList ul li p{font-size: 16px;line-height:16px;margin: 0.25rem 0 0.5rem;}
-.longevityList ul li a{display:block;width:1.55rem;height:0.65rem;border:1px solid #f93402;font-size: 14px;line-height: 0.65rem;margin:0 auto;cursor: pointer;}
+.longevityList ul li{width: 2.5rem;text-align: center;float: left;font-size: 0;margin-bottom:0.75rem;margin-right: 0.5rem;background-color: #f8f8f8;border-radius: 4px;padding: 0.6rem 1.0625rem;position: relative;}
+.longevityList ul li:nth-child(4n){margin-right: 0;}
+.longevityList ul li img.photo{width: 100%;border-radius: 50%;}
+.longevityList ul li p{font-size: 16px;line-height:16px;margin: 0.5rem 0 0.25rem;}
+.longevityList ul li span{display: block;height: 0.6rem;width: 1.75rem;border-radius: 0.3rem;line-height: 0.6rem;text-align: center;color: #999;border: 1px solid #999;margin: 0 auto;font-size: 14px;}
+.longevityList ul li a{position:absolute;bottom:0;left:0;display:block;width:100%;height:1.15rem;font-size: 14px;color:#fff;line-height: 1.15rem;cursor: pointer;background: url("../images/send.png") no-repeat;background-size: 100% 100%;display: none;}
+.longevityList ul li img.vip{position: absolute;top:0.3rem;left:1.0625rem;display: none;}
+.longevityList ul li:hover{background-color: #fff;
+    -webkit-box-shadow: 0 4px 12px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0 4px 12px rgba(0,0,0,0.16);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.16);
+}
+.longevityList ul li:hover span{opacity: 0;}
+.longevityList ul li:hover img.vip{display: block;}
+.longevityList ul li:hover a{display: block;}
 /*我的生日*/
-.myMessage{height: 1.7rem;border-bottom: 1px solid #e5e5e5;margin-bottom: 0.75rem;padding:0.75rem 0;}
-.myMessage>img{height: 1.7rem;float: left;margin-right: 0.375rem;}
-.myMessage span{font-size: 16px;line-height: 1.7rem;}
-.myMessage span.time{float:right;font-size: 20px;line-height: 1.7rem;}
-.myMessage span.time img{height: 20px;margin-left: 0.5rem;}
+.myMessage{height: 2.5rem;background-color: #f8f8f8;margin-bottom: 0.75rem;padding:0.6rem 1rem 0.6rem 0.6rem;position: relative;}
+.myMessage>img{height: 2.5rem;float: left;margin-right: 0.375rem;}
+.myBirthday .myMessage h3{float:left;width:75%;font-size: 24px;line-height:24px;font-weight: bold;margin: 0.5rem 0 0.4rem;}
+.myBirthday .myMessage p.depart{float:left;display: block;height: 0.6rem;width: 1.75rem;border-radius: 0.3rem;line-height: 0.6rem;text-align: center;color: #999;border: 1px solid #999;margin: 0 auto;font-size: 14px;}
+.myMessage p.time{position:absolute;top:0.6rem;right:1rem;display:block;height:2.5rem;}
+.myMessage p.time span:first-child{display: block;font-size: 32px;line-height:44px;border-bottom: 1px solid #ddd;text-align: center;margin-top: 0.3rem;}
+.myMessage p.time span:last-child{display: block;font-size: 26px;text-align: center;line-height:38px;}
 .myBirthday h3{font-size: 16px;line-height:0.9rem;}
 .myBirthday h3 p{display:inline-block;font-weight: normal;margin-left: 0.25rem;}
-.myBirthday{display: none;}
 .myBirthday h3 span{margin:0 5px;}
-.myBirthday li{height: 2.3rem;padding: 0.5rem 0;font-size: 14px;border-bottom: 1px dashed #e5e5e5;}
-.myBirthday li .imgWrap{height: 2.25rem;width:2.25rem;font-size: 0;border: 1px solid #e5e5e5;float:left;margin-right: 0.4rem;}
-.myBirthday li .imgWrap img {width:80%;margin:13% 10%;height: 74%;}
-.myBirthday li p{line-height: 14px;margin-bottom:0.4rem;}
-.myBirthday li p span.name{margin-right: 5px;}
-.myBirthday li p span.time{float:right;color:#999;}
+.myBirthday ul{overflow: hidden;}
+.myBirthday li{width:5.65rem;height: 9rem;font-size: 14px;border: 1px solid #e7e7e7;border-radius: 4px;padding: 0 0.3rem;float: left;overflow: hidden;position: relative;margin-right: 0.5rem;margin-bottom: 0.5rem;}
+.myBirthday li:nth-child(3n){margin-right: 0;}
+.myBirthday li>img{width:80%;margin:10%;}
+
+.myBirthday li p{line-height: 14px;margin-top:0.7rem;text-align: center;}
+.myBirthday li .sendPerson{width:100%;height: 1.5rem;background-color: #f8f8f8;position: absolute;bottom: 0;left:0;font-size: 0;}
+.myBirthday li .sendPerson img{height: 50%;margin:6% 0.3rem;float: left;}
+.myBirthday li .sendPerson span.name{font-size: 14px;color: #333;line-height: 1.5rem;margin-left: 0.3rem;}
+.myBirthday li .sendPerson span.time{float:right;font-size: 14px;color: #999;line-height: 1.5rem;margin-right: 0.3rem;}
 /*-------------------------------right-------------------------------*/
 .blessingList{margin-top: 0.37rem;}
 .blessingList h2{font-size: 16px;line-height: 1.35rem;border-bottom: 1px solid #e5e5e5;}
 .blessingList h2 i{display: block;float:left;width: 4px;height: 4px;margin:0.625rem 5px;}
 .blessingList ul{margin-top:0.375rem;}
-.blessingList li{height:0.85rem;line-height: 0.85rem;font-size: 14px;}
-.blessingList li span.person{font-size: 14px;color: #0066ff;margin:0 8px;}
+.blessingList li{height:1.5rem;padding:0.5rem 0;font-size: 14px;border-bottom: 1px dashed #ddd;}
+.blessingList li .imgWrap{height: 100%;width:1.5rem;border: 1px solid #e6e6e6;float: left;margin-right: 0.25rem;}
+.blessingList li .imgWrap img{height: 80%;margin: 10%;}
+.blessingList li h3{font-weight: normal;float: left;width: 75%;font-size: 16px;line-height: 16px;margin-bottom: 0.3rem;}
+.blessingList li span.person{font-size: 16px;font-weight:bold;margin:0 8px;}
 .blessingList li span.person:first-child{margin-left: 0;}
-.blessingList li p.time{float: right;color: #999;}
+.blessingList li p.time{float: left;width:75%;color: #999;font-size: 14px;line-height: 14px;}
 .blessingList .loadMore{display:block;background-color: #fafafa;height: 1.125rem;line-height: 1.125rem;text-align: center;color:#999;font-size: 14px;}
 /*弹出框*/
-.gift{position: absolute;top:0;left:0;width: 100%;height: 100%;display: none;}
+.gift{position: fixed;top:0;left:0;width: 100%;height: 100%;display: none;}
 .gift .black{width: 100%;height: 100%;background-color: rgba(0,0,0,0.5)}
-.gift .giftBox{width:11rem;height: 10.8rem;background-color: #fff;position: absolute;top:50%;left:50%;margin-top: -5.4rem;margin-left: -6rem;padding: 0 0.5rem}
+.gift .giftBox{width:11rem;height: 10.8rem;background-color: #fff;position: absolute;top:50%;left:50%;margin-top: -5.4rem;margin-left: -6.5rem;padding: 0 1rem;}
 .gift .giftBox h4{font-size: 18px;line-height: 1.85rem;border-bottom: 1px solid #e5e5e5;font-weight: normal;text-align: center;}
 .gift .giftBox h4 span{margin-left:5px;}
-.gift .giftBox ul{overflow: hidden;margin-top: 0.5rem;}
+.gift .giftBox ul{height:3.525rem;position: absolute;left:0;top:0.5rem;}
 .gift .giftBox li{width: 2.375rem;float: left;margin-right: 0.5rem;}
 .gift .giftBox li:last-child{margin-right:0rem;}
 .gift .giftBox li .imgWrap{width:2.325rem;height:2.325rem;border:1px solid #e5e5e5;}
-.gift .giftBox li .imgWrap img{width:80%;margin:13% 10%;height: 74%;}
+.gift .giftBox li .imgWrap img{width:80%;height:80%;margin:10%;}
 .gift .giftBox li p{font-size: 16px;line-height: 0.9rem;margin-bottom: 0.25rem;text-align: center;}
 .gift .giftBox li.active .imgWrap{width:2.275rem;height:2.275rem;border:2px solid #f93402;}
 .gift .giftBox textarea{width: 10.2rem;height: 2.25rem;border:1px solid #e5e5e5;padding: 0.375rem;border-radius:3px;margin-bottom: 0;}
 .gift .giftBox button{width: 3.5rem;height: 0.9rem;color: #fff;border-radius:3px;margin-left:3.75rem;margin-top: 0.25rem;}
+.gift .giftBox i.toLeft{position: absolute;top:3.2rem;left:0.3rem;color: #999;font-size: 0.8rem;}
+.gift .giftBox i.toRight{position: absolute;top:3.2rem;right: 0.3rem;color: #999;font-size: 0.8rem;}

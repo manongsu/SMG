@@ -15,6 +15,11 @@
     <script type="text/javascript" src="js/html5shiv.min.js"></script>
     <script type="text/javascript" src="js/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .aside{width:220px;height: 200px;background-color: #0066ff;position: fixed;right:-240px;bottom: 20px;}
+        .aside p{width:105px;height: 105px;position: absolute;top:50%;left:50%;margin-left: -52.5px;margin-top:-52.5px;font-size: 12px;overflow: hidden;line-height: 15px;color: #fff;}
+        .aside span{width:36px;height: 16px;background-color: #ccc;position: absolute;top:-8px;left:-18px;font-size: 12px;overflow: hidden;line-height: 16px;color: #fff;}
+    </style>
 </head>
 <body>
 <!--------------header---------------->
@@ -973,7 +978,7 @@
                 <li style="border-right: none;">
                     <a href="">
                         <div class="icon" style=" width:42px; height:41px; background-position:-10px -538px; "></div>
-                        <p class="mainC font14">食堂考核</p>
+                        <p class="mainC font14">全媒数据窗</p>
                     </a>
                 </li>
                 <li>
@@ -1205,6 +1210,13 @@
 </footer>
 <div id="mask" style="width: 100%;height: 100%;background-color: rgba(0,0,0,.5);position: absolute;top:0;left:0;display: none;z-index: 100;"></div>
 
+<div class="aside" hidden>
+    <p>管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台管理信息平台</p>
+    <span>X 关闭</span>
+</div>
+
+
+
 <script type="text/javascript" src="js/jquery.1.9.1.js"></script>
 <script type="text/javascript" src="js/banner.js"></script>
 <script type="text/javascript" src="js/tab.js"></script>
@@ -1291,5 +1303,29 @@
 <!--[if lt IE 9]>
 <script type="text/javascript" src="js/rem.js"></script>
 <![endif]-->
+
+
+<script type="text/javascript">
+    $(function () {
+        $(".aside").animate({
+            "right":"20px"
+        },1000);
+		var aside = 0;
+		var int1 = setInterval(function(){
+			aside++;
+			if(aside==20){
+				clearInterval(int1);
+				$(".aside").animate({
+					"right":-$(".aside").width()-20+"px"
+				},1000)
+			}
+		},1000);
+    });
+    $(".aside span").click(function () {
+        $(".aside").animate({
+            "right":-$(".aside").width()-20+"px"
+        },1000)
+    });
+</script>
 </body>
 </html>

@@ -91,32 +91,75 @@
                 <h3>备注</h3>
                 <input class="long" type="text" placeholder="请填写备注信息"/>
             </div>
-            <div class="formGroup" style="padding-bottom: 0;">
-                <h3 style="margin-bottom: 0;">商品信息<span>（只可以选择一种商品哦）</span></h3>
-                <ul>
+            <div class="formGroup" style="padding: 0;">
+                <h3 style="margin-bottom: 0;padding: 0 0.75rem;">商品信息<span>（只可以选择一种商品哦）</span></h3>
+                <ul class="goodsList" style="padding: 0 0.75rem;">
                     <li>
-                        <img class="radio" src="images/radio.png" alt=""/>
                         <img class="goodsImg" src="images/goods1.png" alt=""/>
                         <h4>贝思客蛋糕卡/四种规格<span>库存：100</span></h4>
                         <p class="price">单价：<span class="mainC">￥99.99</span></p>
                         <p class="norm"><i>规格：</i><span>看台<img src="images/check.png" alt=""/></span><span>后台<img src="images/check.png" alt=""/></span><span>前台<img src="images/check.png" alt=""/></span><span>VIP专座<img src="images/check.png" alt=""/></span></p>
                         <p class="num"><i>数量：</i><span class="less">-</span><span class="number">1</span><span class="plus">+</span></p>
+                        <p class="add mainBgc">添加</p>
                     </li>
                     <li>
-                        <img class="radio" src="images/radio.png" alt=""/>
                         <img class="goodsImg" src="images/goods1.png" alt=""/>
                         <h4>贝思客蛋糕卡/四种规格<span>库存：100</span></h4>
                         <p class="price">单价：<span class="mainC">￥99.99</span></p>
                         <p class="norm"><i>规格：</i><span>看台<img src="images/check.png" alt=""/></span><span>后台<img src="images/check.png" alt=""/></span><span>前台<img src="images/check.png" alt=""/></span><span>VIP专座<img src="images/check.png" alt=""/></span></p>
                         <p class="num"><i>数量：</i><span class="less">-</span><span class="number">1</span><span class="plus">+</span></p>
+                        <p class="add mainBgc">添加</p>
                     </li>
                     <li>
-                        <img class="radio" src="images/radio.png" alt=""/>
                         <img class="goodsImg" src="images/goods1.png" alt=""/>
                         <h4>贝思客蛋糕卡/四种规格<span>库存：100</span></h4>
                         <p class="price">单价：<span class="mainC">￥99.99</span></p>
                         <p class="norm"><i>规格：</i><span>看台<img src="images/check.png" alt=""/></span><span>后台<img src="images/check.png" alt=""/></span><span>前台<img src="images/check.png" alt=""/></span><span>VIP专座<img src="images/check.png" alt=""/></span></p>
                         <p class="num"><i>数量：</i><span class="less">-</span><span class="number">1</span><span class="plus">+</span></p>
+                        <p class="add mainBgc">添加</p>
+                    </li>
+                </ul>
+                <ul class="selectList">
+                    <h4>已选择</h4>
+                    <li>
+                        <p>贝思客蛋糕卡/四种规格</p>
+                        <p>规格：18寸</p>
+                        <p>单价：¥18.0</p>
+                        <p>数量：2</p>
+                        <p>小计：¥36.0</p>
+                        <p class="mainC">删除</p>
+                    </li>
+                    <li>
+                        <p>贝思客蛋糕卡/四种规格</p>
+                        <p>规格：18寸</p>
+                        <p>单价：¥18.0</p>
+                        <p>数量：2</p>
+                        <p>小计：¥36.0</p>
+                        <p class="mainC">删除</p>
+                    </li>
+                    <li>
+                        <p>贝思客蛋糕卡/四种规格</p>
+                        <p>规格：18寸</p>
+                        <p>单价：¥18.0</p>
+                        <p>数量：2</p>
+                        <p>小计：¥36.0</p>
+                        <p class="mainC">删除</p>
+                    </li>
+                    <li>
+                        <p>贝思客蛋糕卡/四种规格</p>
+                        <p>规格：18寸</p>
+                        <p>单价：¥18.0</p>
+                        <p>数量：2</p>
+                        <p>小计：¥36.0</p>
+                        <p class="mainC">删除</p>
+                    </li>
+                    <li>
+                        <p>贝思客蛋糕卡/四种规格</p>
+                        <p>规格：18寸</p>
+                        <p>单价：¥18.0</p>
+                        <p>数量：2</p>
+                        <p>小计：¥36.0</p>
+                        <p class="mainC">删除</p>
                     </li>
                 </ul>
             </div>
@@ -213,6 +256,20 @@
     $(function () {
        $(".norm span").click(function () {
            $(this).addClass("active").siblings("span").removeClass("active");
+       });
+       $(".goodsList .add").click(function () {
+           var str  = '<li>'
+               +'<p>贝思客蛋糕卡/四种规格</p>'
+               +'<p>规格：18寸</p>'
+               +'<p>单价：¥18.0</p>'
+               +'<p>数量：2</p>'
+               +'<p>小计：¥36.0</p>'
+               +'<p class="mainC">删除</p>'
+               +'</li>';
+           $(".selectList").append(str);
+           $(".selectList li p:last-child").click(function () {
+               $(this).parent().remove();
+           })
        });
     });
 </script>

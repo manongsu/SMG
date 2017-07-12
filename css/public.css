@@ -55,9 +55,9 @@
 .rese_information .room_info .room_num{margin-top:0.5rem;}
 .rese_information .room_info .room_num span{font-size:16px;color:#333333;display:block;float:left;width: 2.125rem;margin-top:0.25rem;line-height: 1.05rem;text-align: right;margin-right: 0.125rem;}
 .rese_information .room_info .room_num select{display:block;float:left;width:5.75rem;height:1.1rem;font-size:16px;color:#666;border:1px solid #e5e5e5;text-indent: 0.2rem;line-height:1.1rem;border-radius:3px;margin-right: 0.75rem;margin-top:0.25rem;}
-.rese_information .room_info .room_num .time{float:left;;border:1px solid #e5e5e5;width:5.75rem;height:1.05rem;vertical-align:middle;margin-top:0.25rem;line-height:0.9rem;border-radius:3px;margin-right: 0.75rem;}
+.rese_information .room_info .room_num .time{float:left;;border:1px solid #e5e5e5;width:5.75rem;height:1.05rem;vertical-align:middle;margin-top:0.25rem;line-height:0.9rem;border-radius:3px;margin-right: 0.75rem;position: relative;}
 .rese_information .room_info .room_num .time input{width:4.7rem;height:1.05rem;font-size:16px;color:#666;text-indent: 0.3rem;vertical-align:middle;outline: none;float: left;}
-.rese_information .room_info .room_num .time img{vertical-align:middle;}
+.rese_information .room_info .room_num .time img{position: absolute;right:5px;top:50%;margin-top: -9px;}
 .replenish_box{width:21.5rem;}
 .rese_information .room_info .replenish{height:1.05rem;width:4.3rem;border:1px solid #e5e5e5;float:left;margin-right:0.75rem;font-size:16px;color:#333;text-align:center;line-height:1.05rem;margin-top:0.65rem;border-radius:3px;position:relative;}
 .rese_information .room_info .replenish img{position:absolute;right:0;bottom:0;display:none;}
@@ -68,6 +68,16 @@
 .res_sub{float:right;margin:0.25rem 0 0.75rem 0;}
 .res_sub span{font-size:16px;color:#333;font-weight:bold;}
 .res_sub .sub{display:inline-block;width:4.375rem;height:1.1rem;background:#f93402;font-size:16px;color:#fff;text-align:center;line-height:1.05rem;border-radius:3px;margin-left:0.25rem;font-weight:normal;}
+
+
+.mh_infon{width: 100%;overflow: hidden;margin-bottom: 0.5rem;border-bottom: 1px solid #f0f0f0;display: none;}
+.mh_infon>img{width: 6rem;float: left;margin-right: 10px;}
+.mh_infon h4{font-size: 12px;line-height: 12px;margin-bottom: 13px;float: left;width: 60%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.mh_infon p{font-size: 12px;line-height: 12px;margin-bottom: 13px;float: left;width: 60%;}
+.mh_infon p:nth-child(4){margin-bottom:0;}
+.mh_infon p:last-child{margin-bottom:0;}
+
+
 @media screen and (min-width: 320px) and (max-width: 739px){
 	.grog_prompt{width:19.35rem;line-height:20px;}
 	.grogshop_list li{width:9.75rem;margin-right:0.5rem;}
@@ -84,6 +94,11 @@
 	.rese_information .room_info .room_num .time input{width:9.7rem;height:34px;font-size:14px;}
 	.replenish_box{width:18rem;overflow: hidden;}
 	.rese_information .room_info .replenish{height:34px;width:auto;font-size:14px;color:#333;line-height:34px;padding: 0 5px;}
+	.rese_information .room_info .more{height:34px;line-height: 34px;font-size: 14px;}
+	.res_sub span{height: 34px;line-height: 34px;font-size: 14px;}
+	.res_sub .sub{height: 34px;line-height: 34px;font-size: 14px;}
+	.mh_infon{display: block;}
+
 }
 @media screen and (min-width: 740px) and (max-width: 1199px){
 	.grog_prompt{width:19.45rem;line-height:20px;}
@@ -93,10 +108,10 @@
 	.grogshop_list li .grog_price{line-height:24px;font-size: 16px;}
 	.grogshop_list li .grog_name{font-size:16px;line-height: 24px;}
 	.loadMore {height: 34px;font-size: 14px;line-height: 34px;}
-
 	.rese_information .room_info .room_num select{margin-right: 0.5rem;}
 	.rese_information .room_info .room_num .time{margin-right: 0.5rem;}
 	.replenish_box {width: 20rem;}
+	.mh_infon{display: block;}
 }
 @media screen and (min-width: 1200px){
 	.grog_prompt{width:28.7rem;line-height:0.45rem;}

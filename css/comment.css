@@ -12,19 +12,30 @@
 }
 .writeComment form .top div{height: 100%;}
 .writeComment form label{line-height: 0.55rem;font-weight: bold;font-size: 14px;float: left;}
-.writeComment form input{width:4.5rem;height: 0.55rem;line-height: 0.55rem;background-color: #f7f7f7;border: 1px solid #ccc;float: left;}
+.writeComment form input{width:4.5rem;height: 0.55rem;line-height: 0.55rem;background-color: #FFFFFF;border: 1px solid #ccc;float: left;}
 .writeComment form span{margin-left:0.25rem;font-size: 14px;color: #666;float: left;}
-.writeComment form textarea{display: block;width:100%;padding:0.375rem;height: 2.25rem;background-color: #f7f7f7;border-bottom: 1px solid #ccc;}
-.writeComment form .bottom{height:1.3rem;padding: 0 0.375rem;background-color: #fafafa;}
-.writeComment form .bottom img{height:0.75rem;float: left;background-color: #fff;margin: 0.275rem 0.125rem;}
+.writeComment form ul{width: 97%;height:100px;margin: 20px 0;padding-left: 3%;}
+.writeComment form ul li{float: left;width: 25%;height: 100px;position: relative;}
+.writeComment form ul li img{width: 90%;height: 100%;}
+.writeComment form ul li i{position: absolute;top:0;left:90%;display: block;width: 20px;height: 20px;background-color: #f62f2e;border-radius: 10px;font-size: 14px;color: #fff;line-height: 20px;text-align: center;margin-left: -10px;margin-top: -10px;}
+
+.writeComment form textarea{display: block;width:100%;padding:0.375rem;height: 2.25rem;background-color: #FFFFFF;border-bottom: 1px solid #ccc;resize: none;}
+.writeComment form .bottom{height:1.3rem;padding: 0 0.375rem;background-color: #fafafa;position: relative;}
+.writeComment form .bottom>img{height:0.75rem;float: left;background-color: #fff;margin: 0.275rem 0.125rem;}
 .writeComment form .bottom button{width: 2.7rem;height:0.75rem;border: 1px solid #f93402;border-radius: 5px;float: right;background-color: #fff;margin: 0.275rem 0;}
+.writeComment form .bottom .expression{position: absolute;left: -20px;bottom: 52px;width: 11rem;height: 8rem;border: 1px solid #ccc;border-radius: 4px;background-color: #fff;display: none;}
+.writeComment form .expression ul:first-child li{float: left;width: 1rem;text-align: center;}
+.writeComment form .expression ul:nth-child(2) li{float: left;width: 1.5rem;text-align: center;}
+.writeComment form .expression ul:nth-child(3) li{float: left;width: 1.8rem;text-align: center;}
+.writeComment form .expression ul:nth-child(3) li img{width: 90%;}
+.writeComment form .expression img.toD{position:absolute;bottom:-12px;left:40px;}
 /*评论列表*/
 .commentList{border: 1px solid #e5e5e5;border-bottom: none;border-top: none;}
 .commentList .commentArticle{padding:0.5rem;border-bottom: 1px solid #e5e5e5;overflow: hidden;}
 .commentList .commentArticle>img{float: left;margin-right: 15px;width:1rem;height: 1rem;}
-.commentList .commentArticle .name{font-size: 14px;line-height: 20px;float: left;width: 88%;}
+.commentList .commentArticle .name{font-size: 14px;line-height: 20px;width: 88%;}
 .commentList .commentArticle .name span{color: #999;font-size: 14px;}
-.commentList .commentArticle .content{font-size: 14px;line-height: 20px;float: left;width: 88%;}
+.commentList .commentArticle .content{font-size: 14px;line-height: 20px;width: 88%;float: left;}
 .commentList .commentArticle .btn_group{float: right;height:16px;margin-top:10px;height: 16px;}
 .commentList .commentArticle>.btn_group{margin-right: 15px;}
 .commentList .commentArticle .btn_group span{float:left;font-size: 14px;display: inline-block;height: 16px;line-height: 16px;}
@@ -33,19 +44,86 @@
 .commentList .commentArticle .commentImg{float:left;width:90%;margin: 0.25rem 0 0.25rem 1.375rem;font-size: 0;}
 .commentList .commentArticle .commentImg img{width: 3.4rem;height: 3.4rem;margin:0 0.25rem 0.25rem 0;}
 .commentList .commentArticle .commentComment{width: 90%;float: right;border: 1px solid #e5e5e5;margin-top: 0.5rem;}
-.commentList .commentArticle .commentComment li{padding: 15px;border-bottom: 1px dashed #e5e5e5;overflow: hidden;}
-.commentList .commentArticle .commentComment li:last-child{border-bottom: none;}
+.commentList .commentArticle .commentComment>li{padding: 15px;border-bottom: 1px dashed #e5e5e5;}
+.commentList .commentArticle .commentComment>li:last-child{border-bottom: none;}
+.commentList .commentArticle .commentComment .btn_group{float:inherit;width: 100%;}
+.commentList .commentArticle .commentComment .btn_group span{float: right;}
 .commentList .commentArticle .inputWrap{float: right;border: 1px solid #e5e5e5;margin-top: 0.5rem;height: 0.85rem;padding: 0 0.375rem;}
 .commentList .commentArticle .inputWrap img{float:left;width: 0.4rem;height: 0.4rem;margin: 0.2225rem 0.25rem 0.2225rem 0;}
 .commentList .commentArticle .inputWrap input{float:left;height: 0.85rem;}
-.newsList h2{height: 1.3rem;line-height: 1.3rem;border-top: 2px solid #f93402;border-bottom: 1px solid #e5e5e5;font-size: 16px;}
+
+
+
+/*评论-二级评论*/
+.commentComment form{margin:16px 0 0;border: 1px solid #ccc;border-radius: 3px;display: none;}
+.commentComment form .top{height:0.55rem;padding: 0.175rem 0.375rem;
+    background: -webkit-linear-gradient(top,#fff,#e0e0e0); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom,#fff,#e0e0e0); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom,#fff,#e0e0e0); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom,#fff,#e0e0e0); /* 标准写法 */
+}
+.commentComment form .top div{height: 100%;}
+.commentComment form label{line-height: 0.55rem;font-weight: bold;font-size: 14px;float: left;}
+.commentComment form input{width:3rem;height: 0.55rem;line-height: 0.55rem;background-color: #FFFFFF;border: 1px solid #ccc;float: left;}
+.commentComment form span{margin-left:0.25rem;font-size: 14px;color: #666;float: left;}
+
+.commentComment form .top div{height: 100%;}
+.commentComment form label{line-height: 0.55rem;font-weight: bold;font-size: 14px;float: left;}
+.commentComment form input{width:4.5rem;height: 0.55rem;line-height: 0.55rem;background-color: #FFFFFF;border: 1px solid #ccc;float: left;}
+.commentComment form span{margin-left:0.25rem;font-size: 14px;color: #666;float: left;}
+.commentComment form ul{width: 97%;height:100px;margin: 20px 0;padding-left: 3%;}
+.commentComment form ul li{float: left;width: 25%;height: 100px;position: relative;}
+.commentComment form ul li img{width: 90%;height: 100%;}
+.commentComment form ul li i{position: absolute;top:0;left:90%;display: block;width: 20px;height: 20px;background-color: #f62f2e;border-radius: 10px;font-size: 14px;color: #fff;line-height: 20px;text-align: center;margin-left: -10px;margin-top: -10px;}
+
+.commentComment form textarea{display: block;width:100%;padding:0.375rem;height: 2.25rem;background-color: #FFFFFF;border-bottom: 1px solid #ccc;resize: none;}
+.commentComment form .bottom{height:1.3rem;padding: 0 0.375rem;background-color: #fafafa;position: relative;}
+.commentComment form .bottom>img{height:0.75rem;float: left;background-color: #fff;margin: 0.275rem 0.125rem;}
+.commentComment form .bottom button{width: 2.7rem;height:0.75rem;border: 1px solid #f93402;border-radius: 5px;float: right;background-color: #fff;margin: 0.275rem 0;}
+.commentComment form .bottom .expression{position: absolute;left: -20px;bottom: 52px;width: 11rem;height: 8rem;border: 1px solid #ccc;border-radius: 4px;background-color: #fff;display: none;z-index: 99;}
+.commentComment .expression ul:first-child li{float: left;width: 1rem;text-align: center;}
+.commentComment .expression ul:nth-child(2) li{float: left;width: 1.5rem;text-align: center;}
+.commentComment .expression ul:nth-child(3) li{float: left;width: 1.8rem;text-align: center;}
+.commentComment .expression ul:nth-child(3) li img{width: 90%;}
+.commentComment .expression img.toD{position:absolute;bottom:-12px;left:40px;}
+/*评论-一级评论*/
+.commentArticle>form{margin:16px 0 0;border: 1px solid #ccc;border-radius: 3px; float: right;}
+.commentArticle>form .top{height:0.55rem;padding: 0.175rem 0.375rem;
+    background: -webkit-linear-gradient(top,#fff,#e0e0e0); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom,#fff,#e0e0e0); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom,#fff,#e0e0e0); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom,#fff,#e0e0e0); /* 标准写法 */
+}
+.commentArticle>form .top div{height: 100%;}
+.commentArticle>form label{line-height: 0.55rem;font-weight: bold;font-size: 14px;float: left;}
+.commentArticle>form input{width:3rem;height: 0.55rem;line-height: 0.55rem;background-color: #FFFFFF;border: 1px solid #ccc;float: left;}
+.commentArticle>form span{margin-left:0.25rem;font-size: 14px;color: #666;float: left;}
+.commentArticle>form textarea{display: block;width:100%;padding:0.375rem;height: 2.25rem;background-color: #FFFFFF;border-bottom: 1px solid #ccc;resize: none;}
+.commentArticle>form .bottom{height:1.3rem;padding: 0 0.375rem;background-color: #fafafa;position: relative;}
+.commentArticle>form .bottom>img{height:0.75rem;float: left;background-color: #fff;margin: 0.275rem 0.125rem;}
+.commentArticle>form .bottom button{width: 2.7rem;height:0.75rem;border: 1px solid #f93402;border-radius: 5px;float: right;background-color: #fff;margin: 0.275rem 0;}
+.commentArticle>form .bottom .expression{position: absolute;left: -20px;bottom: 52px;width: 11rem;height: 8rem;border: 1px solid #ccc;border-radius: 4px;background-color: #fff;display: none;z-index: 99;}
+.commentArticle>form .expression ul:first-child li{float: left;width: 1rem;text-align: center;}
+.commentArticle>form .expression ul:nth-child(2) li{float: left;width: 1.5rem;text-align: center;}
+.commentArticle>form .expression ul:nth-child(3) li{float: left;width: 1.8rem;text-align: center;}
+.commentArticle>form .expression ul:nth-child(3) li img{width: 90%;}
+.commentArticle>form .expression img.toD{position:absolute;bottom:-12px;left:40px;}
 /*手机端评论*/
-.mCommentList{width: 100%; height: 100%;background-color: #f0f0f0; position: fixed;top:0;left:0;z-index:999;display: none;}
-.mCommentList .mTitle{border-bottom: 1px solid #999;height: 54px;padding: 0 15px;}
-.mCommentList .mTitle button{padding:10px;font-size: 14px;line-height: 14px;margin-top: 10px;border-radius: 3px;}
-.mCommentList .mTitle button.submit{float: right;}
-.mCommentList .mTitle button.cancel{float: left;}
-.mCommentList textarea{width: 100%;height: 220px;font-size: 14px;}
+.mCommentList{width: 100%; height: 90px;background-color: #fafafa; position: fixed;bottom:0;left:0;z-index:999;display: none;font-size: 0;}
+.mCommentList form{padding: 0 10px;position: relative;}
+.mCommentList form>img{height: 21px;margin-top: 11px;}
+.mCommentList input{height: 35px;margin-top: 11px;border: 1px solid #cacaca;border-radius: 3px;width: 100%;font-size: 14px;}
+.mCommentList input.name{height: 19px;margin-top: 11px;border: 1px solid #cacaca;border-radius: 3px;width: 9rem;font-size: 14px;float: right;margin-left: 1rem;display: none;}
+.mCommentList>form .expression{position: absolute;left:0px;bottom: 80px;width:100%;height: 8rem;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;background-color: #fafafa;display: none;}
+.mCommentList>form .expression ul{overflow: hidden;}
+.mCommentList>form .expression ul:first-child li{float: left;}
+.mCommentList>form .expression ul:nth-child(2) li{float: left;width: 2rem;text-align: center;}
+.mCommentList>form .expression ul:nth-child(2) li img{width: 90%;}
+.mCommentList>form .expression ul:nth-child(3) li{float: left;width: 2rem;text-align: center;}
+.mCommentList>form .expression ul:nth-child(3) li img{width: 90%;}
+.mCommentList>form .expression>img:nth-child(4){position:absolute;bottom:10px;left:10px;}
+.mCommentList>form .expression>img:nth-child(5){position:absolute;bottom:10px;left:50px;}
+.mCommentList>form .expression>img:nth-child(6){position:absolute;bottom:10px;left:90px;}
 @media screen and (min-width: 320px) and (max-width: 739px){
     .commentList .commentArticle>img{width:25px;height:25px;}
     .commentList .commentArticle .name{width: 85%;}

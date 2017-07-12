@@ -124,7 +124,7 @@ i{
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	
+	line-height: 24px;
 }
 #hotel_info .z_info .zi_ul li.per{
 	margin-right: 0;
@@ -199,4 +199,35 @@ i{
 }
 .container{
 	padding-bottom: 1rem;
+}
+.mh_infon{width: 100%;overflow: hidden;margin-bottom: 0.5rem;border-bottom: 1px solid #f0f0f0;display: none;}
+.mh_infon>img{width: 6rem;float: left;margin-right: 10px;}
+.mh_infon h4{font-size: 12px;line-height: 12px;margin-bottom: 13px;float: left;width: 60%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.mh_infon p{font-size: 12px;line-height: 12px;margin-bottom: 13px;float: left;width: 60%;}
+.mh_infon p:nth-child(4){margin-bottom:0;}
+.mh_infon p:last-child{margin-bottom:0;}
+@media screen and (min-width: 320px) and (max-width: 739px){
+	#hotel_info .h_bc .bc_ul li{
+		height: 34px;
+		width: auto;
+		font-size: 14px;
+		color: #333;
+		line-height: 34px;
+		padding: 0 5px;
+	}
+	.hotel_sub span{
+		height: 34px;
+		line-height: 34px;
+		font-size: 14px;
+	}
+	.hotel_sub i{
+		height: 34px;
+		line-height: 34px;
+		font-size: 14px;
+	}
+	.font_28{font-size: 16px;line-height: 36px;font-weight: bold;}
+	.mh_infon{display: block;}
+}
+@media screen and (min-width: 739px) and (max-width: 1199px){
+	.mh_infon{display: block;}
 }

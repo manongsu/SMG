@@ -82,3 +82,6 @@
 .publishNum .label p{position: absolute;top:0;left:0;width:100%;color: #fff;text-align: center;line-height: 18px;font-size: 14px;}
 .publishNum li span{font-size: 14px;float: left;line-height: 34px;}
 .publishNum li span.percent{float: right;color: #999;}
+@media screen and (min-width: 320px) and (max-width: 739px){
+    .publicityList li{height:36px;line-height:36px;font-size:16px;border-bottom: 1px dashed #e5e5e5;position: relative;}
+}

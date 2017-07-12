@@ -101,14 +101,20 @@
                 </div>
             </div>
             <div class="videoBannerList">
-                <a href="" class="turnLeft"><img src="images/turnLeft.png" alt=""/></a>
-                <ul>
-                    <li class="borderR" videoUrl="movie.ogg"><img src="images/message1.png" alt=""/><p class="hack">八旬老人发明光盘灯</p></li>
-                    <li class="borderR active" videoUrl=""><img src="images/message2.png" alt=""/><p class="hack">美丽的地球</p></li>
-                    <li class="borderR" videoUrl=""><img src="images/message3.png" alt=""/><p class="hack">牡丹花开放的季节</p></li>
-                    <li class="borderR" videoUrl=""><img src="images/message4.png" alt=""/><p class="hack">实时新闻</p></li>
-                </ul>
-                <a href=""class="turnRight"><img src="images/turnRight.png" alt=""/></a>
+                <a class="turnLeft"><img src="images/turnLeft.png" alt=""/></a>
+                <div style="width: 729px;height: 100px;overflow: hidden;position: relative;float: left;">
+                    <ul>
+                        <li class="borderR" videoUrl="movie.mp4"><img src="images/message1.png" alt=""/><p class="hack">八旬老人发明光盘灯</p></li>
+                        <li class="borderR active" videoUrl=""><img src="images/message2.png" alt=""/><p class="hack">美丽的地球</p></li>
+                        <li class="borderR" videoUrl=""><img src="images/message3.png" alt=""/><p class="hack">牡丹花开放的季节</p></li>
+                        <li class="borderR" videoUrl=""><img src="images/message4.png" alt=""/><p class="hack">实时新闻</p></li>
+                        <li class="borderR" videoUrl=""><img src="images/message4.png" alt=""/><p class="hack">实时新闻</p></li>
+                        <li class="borderR" videoUrl=""><img src="images/message4.png" alt=""/><p class="hack">实时新闻</p></li>
+                        <li class="borderR" videoUrl=""><img src="images/message4.png" alt=""/><p class="hack">实时新闻</p></li>
+                        <li class="borderR" videoUrl=""><img src="images/message4.png" alt=""/><p class="hack">实时新闻</p></li>
+                    </ul>
+                </div>
+                <a class="turnRight"><img src="images/turnRight.png" alt=""/></a>
             </div>
         </div>
         <div class="videoList">
@@ -519,6 +525,21 @@
 <script type="text/javascript">
     $(".videoBannerList li").click(function () {
        $(".movie").attr("src",$(this).attr("videoUrl"));
+       $(this).addClass("active").siblings("li").removeClass("active");
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $(".turnLeft").click(function () {
+            $(".videoBannerList ul").animate({
+                "left":"5px"
+            },800)
+        })
+        $(".turnRight").click(function () {
+            $(".videoBannerList ul").animate({
+                "left":"-715px"
+            },800)
+        })
     });
 </script>
 <!--[if lt IE 9]>

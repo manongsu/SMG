@@ -1,33 +1,41 @@
 .orderTitle{margin-top:0.375rem;font-size: 20px;line-height: 1.15rem;border-bottom: 2px solid #f93402;}
-form .orderMessage{border: 1px solid #f0f0f0;border-top:none;padding: 0 0.75rem;}
+form .orderMessage{border: 1px solid #f0f0f0;border-top:none;}
 .orderMessage h3{font-size: 16px;line-height: 16px;margin: 0.75rem 0;}
 .orderMessage h3 span{font-size: 14px;line-height: 16px;color: #666;font-weight: normal;}
-.orderMessage .formGroup{overflow: hidden;padding-bottom: 0.75rem;border-bottom: 1px solid #f0f0f0;}
+.orderMessage .formGroup{overflow: hidden;border-bottom: 1px solid #f0f0f0;padding: 0 0.75rem 0.75rem;}
 .orderMessage label{display: block;width:2.2rem;height:1.125rem;float: left;font-size: 16px;line-height: 1.125rem;font-weight: normal;}
 .orderMessage input{width:5.2rem;height:1.075rem;float:left;border:1px solid #cacaca;margin-right: 0.75rem;padding: 0 0.25rem;}
 .orderMessage input.long{width:15.1rem;height:1.075rem;float:left;border:1px solid #cacaca;margin-right: 0.75rem;padding: 0 0.25rem;}
-.orderMessage li{padding: 0.75rem 0;height: 3.7rem;border-bottom: 1px solid #e5e5e5;}
-.orderMessage li:last-child{border-bottom: none;}
-.orderMessage li .radio{display:block;float: left;margin:1.625rem 0.375rem;width: 18px;}
-.orderMessage li .goodsImg{display:block;float: left;height: 3.65rem;width:3.65rem;border: 1px solid #f0f0f0;margin-right: 0.6rem;}
-.orderMessage li h4{font-size: 16px;line-height: 20px;margin-bottom: 0.5rem;float: left;width: 22rem;}
-.orderMessage li h4 span{float:right;font-size: 14px;line-height: 20px;font-weight: normal;}
-.orderMessage li p{float:left;width:80%;font-size: 14px;line-height: 14px;}
-.orderMessage li p.price{margin-bottom: 0.375rem;}
-.orderMessage li p.price span{font-weight: bold;}
-.orderMessage li p.norm{height: 0.8rem;margin-bottom:0.375rem;}
-.orderMessage li p.norm span{display: block;float:left;width:2.15rem;height: 0.75rem;border: 1px solid #ccc;border-radius: 3px;margin-right: 0.25rem;line-height: 0.75rem;text-align: center;position: relative;}
-.orderMessage li p.norm span img{position: absolute;bottom:0;right:0;height: 50%;display:none;}
-.orderMessage li p.norm span.active{border: 1px solid #f93402;}
-.orderMessage li p.norm span.active img{display: block;}
-.orderMessage li p.norm i{float: left;font-style: inherit;line-height: 0.75rem;}
-.orderMessage li p.num{height: 0.75rem;line-height: 0.75rem;}
-.orderMessage li p.num span{display:block;float:left;height: 0.75rem;line-height: 0.75rem;text-align: center;}
-.orderMessage li p.num span.less,.plus{width: 0.8rem;}
-.orderMessage li p.num span.less{border: 1px solid #ccc;border-right:none;border-radius: 3px 0 0 3px;}
-.orderMessage li p.num span.plus{border: 1px solid #ccc;border-left:none;border-radius:0 3px 3px 0 ;}
-.orderMessage li p.num span.number{border: 1px solid #ccc;width: 1.7rem;}
-.orderMessage li p.num i{float: left;font-style: inherit;line-height: 0.75rem;}
+.orderMessage .goodsList li{padding: 0.75rem 0;height: 3.7rem;border-bottom: 1px solid #e5e5e5;}
+.orderMessage .goodsList li:last-child{border-bottom: none;}
+.orderMessage .goodsList li .radio{display:block;float: left;margin:1.625rem 0.375rem;width: 18px;}
+.orderMessage .goodsList li .goodsImg{display:block;float: left;height: 3.65rem;width:3.65rem;border: 1px solid #f0f0f0;margin-right: 0.6rem;}
+.orderMessage .goodsList li h4{font-size: 16px;line-height: 20px;margin-bottom: 0.5rem;float: left;width: 23.4rem;}
+.orderMessage .goodsList li h4 span{float:right;font-size: 14px;line-height: 20px;font-weight: normal;}
+.orderMessage .goodsList li p{float:left;width:50%;font-size: 14px;line-height: 14px;}
+.orderMessage .goodsList li p.price{margin-bottom: 0.375rem;}
+.orderMessage .goodsList li p.price span{font-weight: bold;}
+.orderMessage .goodsList li p.norm{height: 0.8rem;margin-bottom:0.375rem;}
+.orderMessage .goodsList li p.norm span{display: block;float:left;width:2.15rem;height: 0.75rem;border: 1px solid #ccc;border-radius: 3px;margin-right: 0.25rem;line-height: 0.75rem;text-align: center;position: relative;}
+.orderMessage .goodsList li p.norm span img{position: absolute;bottom:0;right:0;height: 50%;display:none;}
+.orderMessage .goodsList li p.norm span.active{border: 1px solid #f93402;}
+.orderMessage .goodsList li p.norm span.active img{display: block;}
+.orderMessage .goodsList li p.norm i{float: left;font-style: inherit;line-height: 0.75rem;}
+.orderMessage .goodsList li p.num{height: 0.75rem;line-height: 0.75rem;}
+.orderMessage .goodsList li p.num span{display:block;float:left;height: 0.75rem;line-height: 0.75rem;text-align: center;}
+.orderMessage .goodsList li p.num span.less,.plus{width: 0.8rem;}
+.orderMessage .goodsList li p.num span.less{border: 1px solid #ccc;border-right:none;border-radius: 3px 0 0 3px;}
+.orderMessage .goodsList li p.num span.plus{border: 1px solid #ccc;border-left:none;border-radius:0 3px 3px 0 ;}
+.orderMessage .goodsList li p.num span.number{border: 1px solid #ccc;width: 1.7rem;}
+.orderMessage .goodsList li p.num i{float: left;font-style: inherit;line-height: 0.75rem;}
+.orderMessage .goodsList li p.add{float: right;width: 88px;height: 33px;line-height: 33px;text-align: center;color: #fff;border-radius: 3px;}
+.orderMessage .selectList{border-top: 1px solid #e5e5e5;padding:30px 0.75rem 0;}
+.orderMessage .selectList h4{font-size: 16px;line-height: 16px;margin-bottom: 10px;}
+.orderMessage .selectList li{height: 55px;line-height: 55px;border-bottom: 1px dashed #e5e5e5;}
+.orderMessage .selectList li:last-child{border-bottom:none;}
+.orderMessage .selectList li p{font-size: 14px;color: #222222;float: left;width: 17%;text-align: center;}
+.orderMessage .selectList li p:first-child{width: 22%;text-align: left;}
+.orderMessage .selectList li p:last-child{width: 10%;color: #f93402;}
 .submit{float: right;overflow:hidden;margin-top: 0.25rem;}
 .submit button{width: 4.375rem;height: 1.125rem;color:#fff;}
 .submit p{float: left;height: 1.125rem;line-height: 1.125rem;font-size: 14px;margin-top: 0.25rem;}

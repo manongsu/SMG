@@ -85,8 +85,15 @@
             <p class="text">第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行第三届上海国际杂技教育论坛举行</p>
         </article>
         <div class="comBtn">
-            <img src="images/zan.png" style="margin-right: 1.25rem;" alt=""/>
-            <img src="images/bian.png" alt=""/>
+            <div>
+                <img src="images/love.png" style="" alt=""/>
+                <p>288</p>
+
+            </div>
+            <div>
+                <img src="images/hate.png" alt=""/>
+                <p>288</p>
+            </div>
         </div>
         <!--发表评论-->
         <div class="writeComment">
@@ -371,5 +378,18 @@
 <!--[if lt IE 9]>
 <script type="text/javascript" src="js/rem.js"></script>
 <![endif]-->
+<!--点赞，踩-->
+<script type="text/javascript">
+    $(function () {
+        var clicked = 0;
+        $(".comBtn img").click(function () {
+            if(clicked == 0){
+                $(this).attr("src",$(this).attr("src").replace(".png","Active.png"));
+                $(this).next().css("color","#fff");
+                clicked = 1;
+            }
+        });
+    })
+</script>
 </body>
 </html>
