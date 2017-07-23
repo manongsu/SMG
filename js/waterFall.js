@@ -1,6 +1,14 @@
 function waterFall() {
     var height1 = 0,height2 = 0,height3 = 0;
     var mB = parseInt($("body").css("font-size"))/2;
+    $(".waterFall li").each(function () {
+        var index = $(this).index() + 1;
+        if(index<=3){
+            check($(this),index);
+        }else{
+            insert($(this));
+        }
+    });
     function check($this,index) {
         switch (index){
             case 1:
@@ -39,14 +47,7 @@ function waterFall() {
         }
         check($this,minCol)
     }
-    $(".waterFall li").each(function () {
-        var index = $(this).index() + 1;
-        if(index<=3){
-            check($(this),index);
-        }else{
-            insert($(this));
-        }
-    });
+
 }
 waterFall();
 $(function () {

@@ -45,6 +45,7 @@
 .blogList li .timeLine{float: left;width: 5px;height: 34px;margin-right: 10px;}
 .blogList li .timeLine p{width: 1px;height: 14.5px;margin: 0 auto;background-color:#f0f0f0;}
 .blogList li .timeLine i{display: block;width: 5px;height: 5px;margin: 0 auto;background-color:#999;border-radius: 2.5px;}
+.blogList li span.title{width:234px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .blogList li span{font-size: 14px;float: left;}
 .blogList li span.time{float: right;color: #999;}
 /*publish*/
