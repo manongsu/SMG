@@ -1,5 +1,5 @@
 
-$(".waterFall img").load(function () {
+$(".waterFall li a img").load(function () {
     function waterFall() {
         var height1 = 0,height2 = 0,height3 = 0;
         var mB = parseInt($("body").css("font-size"))/2;
