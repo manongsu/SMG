@@ -41,7 +41,7 @@
 .list_group .media_list{padding: 0.375rem 0;border-bottom: 1px solid #f0f0f0;height: 3.75rem;position: relative;}
 .media_list a{display: block;width: 100%;height: 100%;overflow: hidden;}
 .media_list a .media_left{float: left;height: 100%;width: 6rem;margin-right: 0.625rem;}
-.media_list a h3{float: left;width: 13.25rem;padding-right: 0.125rem;font-weight: normal;margin-bottom: 0.375rem;overflow: hidden;text-overflow: ellipsis; }
+.media_list a h3{float: left;width: 13.25rem;padding-right: 0.125rem;font-weight: normal;margin-bottom: 0.375rem;overflow: hidden;text-overflow: ellipsis;white-space:nowrap;}
 .media_list a h3.active{color: #f93402;}
 .media_list a h3:hover{color: #f93402;}
 .media_list p.des{color: #999;height:14px;width: 13.25rem;float: left;}
@@ -101,7 +101,7 @@
 .links ul{margin-bottom: 0;overflow: hidden;}
 .links li{width:84px;height: 84px;float:left;border-right:1px solid #f2f2f2;border-bottom:1px solid #f2f2f2;position: relative;}
 .links li .icon{background:url("../images/links.png") top left no-repeat;margin: 12px auto;}
-.links li p{text-align: center;position: absolute;left:0;bottom: 12px;margin-bottom: 0;width: 100%;font-size: 14px;color: #8a91a1;}
+.links li p{text-align: center;position: absolute;left:0;bottom: 12px;margin-bottom: 0;width: 100%;font-size: 14px;/*color: #8a91a1;*/}
 /*groupBuy*/
 .groupBuy{padding-bottom: 15px;border-bottom: 1px solid #d8d8d8;}
 .groupBuy h4{height: 1.35rem;line-height: 1.35rem;font-size: 16px;font-weight: normal;border-bottom: 1px solid #d8d8d8;padding: 0 15px;}
@@ -160,14 +160,14 @@
 .birthday li p{margin-top: 10px;font-size: 18px;text-align: center;}
 @media screen and (min-width: 320px) and (max-width: 739px){
     .banner{width: 20rem;height: 15.09434rem;}
-    .banner_list li p{font-size: 16px;}
-    .media_list a h3{height:36px;font-size: 16px;line-height: 18px;}
+    .banner_list li p{font-size: 14px;}
+    .media_list a h3{height:16px;font-size: 14px;line-height: 16px;}
     .media_list p.des span{font-size: 12px;}
 }
 @media screen and (min-width: 740px) and (max-width: 1199px){
     .banner{width: 20rem;height: 15.09434rem;}
     .banner_list li p{font-size: 18px;}
-    .media_list a h3{height:48px;font-size: 18px;line-height: 24px;}
+    .media_list a h3{height:24px;font-size: 18px;line-height: 24px;}
     .media_list p.des span{font-size: 14px;}
 }
 @media screen and (min-width: 1200px){
